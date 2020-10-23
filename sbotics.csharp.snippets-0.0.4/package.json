@@ -1,0 +1,41 @@
+{
+    "name": "sbotics.csharp.snippets",
+    "displayName": "Snippets C# sBotics",
+    "description": "Snippets de C# para o simulador sBotics",
+    "version": "0.0.4",
+    "publisher": "Gabrieldp-dev",
+    "icon": "favicon.png",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "sboticsC",
+                "extensions": [
+                    ".sboticsC",
+                    ".sBoticsC",
+                    ".cs"
+                ],
+                "aliases": [
+                    "sboticsC",
+                    "sBoticsC",
+                    "cs"
+                ],
+                "firstLine": "^#!\\s*/.*\\bsboticsC\\b"
+            }
+        ],
+        "snippets": [
+            {
+                "languages": [
+                    "sboticsC",
+                    "C#"
+                ],
+                "path": "./snippets/sbotics-c#-snippets.code-snippets"
+            }
+        ]
+    }
+}
