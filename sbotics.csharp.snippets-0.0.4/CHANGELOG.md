@@ -1,9 +1,8 @@
 # Change Log
 
-All notable changes to the "c--sbotics-snipets" extension will be documented in this file.
+Se você chegou aqui você é bem curioso hein rs
+Aproveita e me segue lá no insta: @gabs_dp_
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [Falta adicionar]
 
-## [Unreleased]
-
-- Initial release
+- Comandos de lista do sBotics

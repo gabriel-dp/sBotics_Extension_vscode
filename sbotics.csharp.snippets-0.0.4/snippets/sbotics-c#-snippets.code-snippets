@@ -195,10 +195,10 @@
           ],
           "description": "Move o robô em rotações na velocidade definida."
      },
-     " bc.saveLCD": {
-          "prefix": " bc.saveLCD",
+     "bc.saveLCD": {
+          "prefix": "bc.saveLCD",
           "body": [
-               " bc.saveLCD()",
+               "bc.saveLCD()",
           ],
           "description": "Habilita o registro em arquivo do conteúdo do console"
      },
@@ -268,21 +268,21 @@
      "bc.onTFRight": {
           "prefix": "bc.onTFRight",
           "body": [
-               "bc.onTFRight({1:vel})",
+               "bc.onTFRight(${1:vel})",
           ],
           "description": "Aplica a força indicada no motor da direita"
      },
      "bc.onTFLeft": {
           "prefix": "bc.onTFLeft",
           "body": [
-               "bc.onTFLeft({1:vel})",
+               "bc.onTFLeft(${1:vel})",
           ],
           "description": "Aplica a força indicada no motor da esquerda"
      },
      "bc.colorSens": {
           "prefix": "bc.colorSens",
           "body": [
-               "bc.colorSens({1:val})",
+               "bc.colorSens(${1:val})",
           ],
           "description": "Ajusta a sensibilidade do sensor de cor"
      },
@@ -296,7 +296,7 @@
      "bc.setPrecision": {
           "prefix": "bc.setPrecision",
           "body": [
-               "bc.setPrecision({1:val})",
+               "bc.setPrecision(${1:val})",
           ],
           "description": "Ajusta a quantidade de casas decimais"
      },

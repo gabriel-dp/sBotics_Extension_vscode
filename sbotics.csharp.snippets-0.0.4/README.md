@@ -2,9 +2,18 @@
 
 Extensão feita para facilitar a vida dos programadores c# do sBotics!
 
+
+Aceita extensões ".cs", ".sboticsC" e ".sBoticsC".
+
+
+![Exemplo de como aparecem](./example.gif)
+
+
+Obs: não deixa as letras coloridas!
+
 ## Features
 
-Primeira versão
+Primeira versão, quaisquer problemas relate experiência!
 
 ## Requirements
 
@@ -14,19 +23,16 @@ Só baixar e partir pro abraço
 
 Primeira versão
 
+### 1.0.2
+
+GIF adicionado
+
 -----------------------------------------------------------------------------------------------------------
 
-## Se quiser me
+## Relate Experiência
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+**Discord sBotics:** gab23
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+* Mande uma mensagem no meu privado relatando seus problemas/sugestões
 
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Espero que goste!**
