@@ -11,7 +11,7 @@ Aceita extensões ".cs", ".sboticsC" e ".sBoticsC".
 
 Obs: não deixa as letras coloridas!! Apenas sugere comandos
 
-## Requerementos
+## Requerimentos
 
 Só baixar e partir pro abraço
 
