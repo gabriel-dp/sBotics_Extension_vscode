@@ -1,3 +1,7 @@
+### 1.0.6
+
+Alterações no repositório e no marketplace
+
 ### 1.0.5
 
 Correção do bug que fazia a extensão funcionar com qualquer linguagem.

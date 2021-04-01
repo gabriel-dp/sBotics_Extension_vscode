@@ -1,19 +1,30 @@
 {
 	"name": "sbotics-csharp-snippets",
 	"displayName": "Snippets C# sBotics",
-	"description": "Snippets de C# para o simulador sBotics",
-	"version": "1.0.5",
+	"description": "C# Snippets to the sBotics simulator",
+	"version": "1.0.6",
 	"publisher": "Gabrieldp-dev",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Natalnet/sbotics-site/blob/master/images"
+		"url": "https://github.com/gabrieldp23/Snippets-Csharp-sBotics"
 	},
 	"icon": "favicon.png",
 	"engines": {
 		"vscode": "^1.47.0"
 	},
+	"galleryBanner": {
+		"color": "#36393F",
+		"theme": "dark"
+	},
 	"categories": [
 		"Snippets"
+	],
+	"keywords": [
+		"snippets",
+		"csharp",
+		"sbotics",
+		"sBotics",
+		"sboticsC"
 	],
 	"contributes": {
 		"snippets": [
