@@ -1,0 +1,36 @@
+{
+	"name": "sbotics-csharp-snippets",
+	"displayName": "Snippets C# sBotics",
+	"description": "Snippets de C# para o simulador sBotics",
+	"version": "1.0.5",
+	"publisher": "Gabrieldp-dev",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Natalnet/sbotics-site/blob/master/images"
+	},
+	"icon": "favicon.png",
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "csharp",
+				"path": "./snippets/sbotics-c#-snippets.code-snippets"
+			},
+			{
+				"language": "sboticsC",
+				"path": "./snippets/sbotics-c#-snippets.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "461aa513-dc96-4471-83cf-73055aca8fa3",
+		"publisherId": "b64c32a8-a6eb-4a7a-a577-f7bd0f37c531",
+		"publisherDisplayName": "Gabriel_dp",
+		"installedTimestamp": 1617299356408
+	}
+}
