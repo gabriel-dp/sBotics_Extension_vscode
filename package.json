@@ -8,7 +8,7 @@
 		"type": "git",
 		"url": "https://github.com/gabrieldp23/sBotics_Snippets_vscode"
 	},
-	"icon": "favicon.png",
+	"icon": "./assets/logo.png",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
