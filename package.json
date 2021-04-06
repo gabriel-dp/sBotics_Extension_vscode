@@ -1,49 +1,98 @@
 {
-  "name": "sbotics-snippets",
-  "displayName": "sBotics Snippets",
-  "description": "Snippets to the sBotics simulator",
-  "version": "1.0.0",
-  "engines": {
-    "vscode": "^1.46.0"
-  },
-  "categories": [
-    "Snippets",
-	"Other"
-  ],
-  "activationEvents": [
-    "*"
-  ],
-  "main": "./extension.js",
-  "contributes": {
-    "snippets": [
-      {
-        "language": "csharp",
-        "path": "./snippets/csharp.code-snippets"
-      },
-      {
-        "language": "sboticsC",
-        "path": "./snippets/reduc_pt_BR.code-snippets"
-      }
-    ]
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/glob": "^7.1.3",
-    "@types/mocha": "^8.0.0",
-    "@types/node": "^12.11.7",
-    "@types/vscode": "^1.46.0",
-    "axios": "^0.21.1",
-    "eslint": "^7.9.0",
-    "glob": "^7.1.6",
-    "mocha": "^8.1.3",
-    "typescript": "^4.0.2",
-    "vscode-test": "^1.4.0"
-  },
-  "dependencies": {
-    "fs": "0.0.1-security"
-  }
+	"name": "sbotics-snippets",
+	"displayName": "sBotics Snippets",
+	"description": "Snippets to the sBotics simulator",
+	"version": "1.0.0",
+	"publisher": "Gabrieldp-dev",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gabrieldp23/sBotics_Snippets_vscode"
+	},
+	"icon": "favicon.png",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"galleryBanner": {
+		"color": "#36393F",
+		"theme": "dark"
+	},
+	"categories": [
+		"Snippets",
+		"Programming Languages"
+	],
+	"keywords": [
+		"snippets",
+		"csharp",
+		"sbotics",
+		"sBotics",
+		"sboticsC",
+		"reduc",
+		"sboticsR"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "csharp",
+				"path": "./snippets/csharp.code-snippets"
+			},
+			{
+				"language": "sboticsC",
+				"path": "./snippets/csharp.code-snippets"
+			},
+			{
+				"language": "reduc-en",
+				"path": "./snippets/reduc_en.code-snippets"
+			},
+			{
+				"language": "reduc-ptbr",
+				"path": "./snippets/reduc_pt_BR.code-snippets"
+			}
+		],
+		"languages": [
+			{
+				"id": "reduc-en",
+				"aliases": [
+					"reducEN"
+				],
+				"extensions": [
+					".sboticsR"
+				],
+				"configuration": "./support/language-configuration.json"
+			},
+			{
+				"id": "reduc-ptbr",
+				"aliases": [
+					"reducPTBR"
+				],
+				"extensions": [
+					".sboticsR"
+				],
+				"configuration": "./support/language-configuration.json"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.9.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.0.2",
+		"vscode-test": "^1.4.0"
+	},
+	"dependencies": {
+		"@types/vscode": "^1.55.0",
+		"axios": "^0.21.1",
+		"fs": "0.0.1-security"
+	}
 }
