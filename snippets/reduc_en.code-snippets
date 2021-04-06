@@ -1,0 +1,7 @@
+{
+                "esperar": {
+                    "prefix": "esperar",
+                    "body": ["esperar(${1:time(int)});",],"description":"esse aqui é reduc_en julio!!!!!"},
+                "mover": {
+                    "prefix": "mover",
+                    "body": ["mover(${1:esquerda(int)}, ${2:direita(int)});",],"description":"esse tbm é reduc en!!!"},}

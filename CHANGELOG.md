@@ -1,24 +1,9 @@
-### 1.0.6
+# Change Log
 
-Alterações no repositório e no marketplace
+All notable changes to the "sbotics-snippets" extension will be documented in this file.
 
-### 1.0.5
+Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-Correção do bug que fazia a extensão funcionar com qualquer linguagem.
-Mostra nas sugestões de escrita do comando sua versão para reduc.
+## [Unreleased]
 
-### 1.0.4
-
-Novos comandos
-
-### 1.0.3
-
-GIF adicionado
-
-### 1.0.0
-
-Primeira versão
-
-## [Provavelmente não será adicionado]
-
-- Comandos de lista do sBotics
+- Initial release
