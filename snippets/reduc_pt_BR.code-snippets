@@ -1,12 +1,23 @@
 {
-  "esperar": {
-    "prefix": "esperar",
-    "body": ["esperar(${1:time(int)});"],
-    "description": "Espera de um tempo em milissegundos antes de executar o próximo comando. Os valores devem ser sempre inteiros maiores que 0."
-  },
-  "mover": {
-    "prefix": "mover",
-    "body": ["mover(${1:esquerda(int)}, ${2:direita(int)});"],
-    "description": "sei la mano ela move!"
-  }
+    "esperar": {
+        "prefix": "esperar",
+        "body": [
+            "esperar(${1:time(int)});",
+        ],
+        "description": "eu sou uma batata"
+    },
+    "mover": {
+        "prefix": "mover",
+        "body": [
+            "mover(${1:esquerda(int)}, ${2:direita(int)});",
+        ],
+        "description": "AAAAAAAAAAAAAAAAAAAAA"
+    },
+    "ganharobr": {
+        "prefix": "ganharobr",
+        "body": [
+            "ganharobr(${1:equipe(str)});",
+        ],
+        "description": "envia uma requisição para o cBotics com a pontuação máxima da arena"
+    },
 }
