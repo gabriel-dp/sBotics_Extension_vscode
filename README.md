@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=Gabrieldp-dev.sbotics-csharp-snippets">
-    <img src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/logo.png?raw=true" height="150" width="175" alt="Logo snippets sBotics" />
+    <img src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/logo.png?raw=true" height="200" width="200" alt="Logo snippets sBotics" />
   </a>
 </p>
 <h1 align="center">sBotics Snippets</h1>
