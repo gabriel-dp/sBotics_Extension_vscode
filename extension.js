@@ -68,7 +68,7 @@ const jsonToSnippet = (nameLang, json) => {
             const calc = k + 1;
 
             Code += "${";
-            Code += `${calc}:${key}(${value})`;
+            Code += `${calc}:${key}[${value}]`;
             Code += "}, ";
 
 
@@ -100,14 +100,13 @@ function activate(context) {
     var langs = [
         "reduc_en",
         "reduc_pt_BR",
-        "csharp",
-        "edu"
+        "csharp"
     ];
 
     for (let l = 0; l < langs.length; l++) {
         const langPrograming = langs[l];
         const functions = apiSnippets(langPrograming);
-        Promise.resolve(functions).then(function(value) {
+        Promise.resolve(functions).then(function (value) {
             const states = value.states;
             const message = value.messsage;
             const response = value.response;
@@ -117,7 +116,7 @@ function activate(context) {
             } else {
                 jsonToSnippet(langPrograming, response);
             }
-        }, function(value) {
+        }, function (value) {
             vscode.window.showErrorMessage("Ocorreu um erro inesperado!");
         });
     }
@@ -126,5 +125,5 @@ function activate(context) {
 }
 exports.activate = activate;
 
-function deactivate() {}
+function deactivate() { }
 exports.deactivate = deactivate;
