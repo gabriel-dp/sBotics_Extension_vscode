@@ -1,7 +1,4 @@
 {
                 "abacate": {
                     "prefix": "abacate",
-                    "body": ["abacate(${1:time(int)})",],"description":"aaeuaeaeblauelaue"},
-                "mover": {
-                    "prefix": "mover",
-                    "body": ["mover(${1:esquerda(int)}, ${2:direita(int)});",],"description":"block edu"},}
+                    "body": ["abacate(${1:time(int)})",],"description":"MUDA AI VSCODE NAMORAL CARA"},}
