@@ -100,8 +100,7 @@ function activate(context) {
     var langs = [
         "reduc_en",
         "reduc_pt_BR",
-        "csharp",
-        "edu"
+        "csharp"
     ];
 
     for (let l = 0; l < langs.length; l++) {
