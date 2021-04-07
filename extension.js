@@ -14,7 +14,7 @@ async function apiSnippets(nameLang) {
     } catch (error) {
         //Return Error
         const response = {
-            "messsage": "Erro ao fazer request para api!",
+            "messsage": "Error at api request!",
             "states": "404",
             "response": ""
         }
@@ -25,9 +25,7 @@ async function apiSnippets(nameLang) {
 const saveSnippet = (nameLang, snippet) => {
     fsLibrary.writeFile(__dirname + "/snippets/" + nameLang + ".code-snippets", snippet, (erro) => {
         if (erro) {
-            console.log("Error" + erro);
-        } else {
-            console.log("Criado com sucesso!");
+            console.log("Error " + erro);
         }
     })
 }
@@ -39,7 +37,6 @@ const jsonToSnippet = (nameLang, json) => {
     var Code = "{";
     for (let i = 0; i < json.length; i++) {
         const e = json[i];
-        console.log(e);
 
         const id = e['id'].toString();
         const name = e['name'].toString();
@@ -74,7 +71,7 @@ const jsonToSnippet = (nameLang, json) => {
 
         }
         Code = Code.replace(/,\s*$/, "");
-        if (return_type == "Void") {
+        if (return_type == "Void" && nameLang == "csharp") {
             Code += `);`;
         } else {
             Code += `)`;
@@ -84,18 +81,14 @@ const jsonToSnippet = (nameLang, json) => {
 
     }
     Code += "}";
-    console.log(Code);
     saveSnippet(nameLang, Code);
 };
-
 
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-
-    console.log('Congratulations, your extension "sbotics-snippets" is now active!');
 
     var langs = [
         "reduc_en",
@@ -120,7 +113,6 @@ function activate(context) {
             vscode.window.showErrorMessage("Ocorreu um erro inesperado!");
         });
     }
-
 
 }
 exports.activate = activate;
