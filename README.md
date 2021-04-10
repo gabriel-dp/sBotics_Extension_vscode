@@ -4,54 +4,55 @@
   </a>
 </p>
 <h1 align="center">sBotics Snippets</h1>
-<p align="center">Snippets com suporte às lingugens do <a href="https://weduc.natalnet.br/sbotics">sBotics</a> para VS Code</p>
+<p align="center">Snippets with <a href="https://weduc.natalnet.br/sbotics">sBotics</a> language support for VS Code</p>
 
-<h4 align="center">🚧  Em construção 🚧</h4>
+<h4 align="center">🚧 Under construction 🚧</h4>
 
 <p align="center">
  <a href="#features">Features</a> • 
- <a href="#demonstração">Demonstração</a> • 
- <a href="#instalação">Instalação</a> • 
- <a href="#contribuição">Contribuição</a>
+ <a href="#demonstration">Demonstration</a> • 
+ <a href="#installation">Installation</a> • 
+ <a href="#contribution">Contribution</a>
 </p>
 
 ## Features
-  - [x] Snippets para rEduc em Portugês do Brasil
-    - [x] Comandos
-    - [x] Parâmetros
-      - [x] Tipos
-  - [x] Snippets para rEduc em Inglês
-    - [x] Comandos
-    - [x] Parâmetros
-      - [x] Tipos
+  - [x] Snippets for rEduc in Brazilian Portuguese
+    - [x] Commands
+    - [x] Parameters
+      - [x] Types
+  - [x] Snippets for rEduc in English
+    - [x] Commands
+    - [x] Parameters
+      - [x] Types
   - [x] Snippets para C#
-    - [x] Comandos
-    - [x] Parâmetros
-      - [x] Tipos
-  - [x] Atualização automática dos snippets
+    - [x] Commands
+    - [x] Parameters
+      - [x] Types
+  - [x] Automatic update of snippets
 
-## Demonstração
-Abaixo tem um gif do poder dos snippets, demonstrado em C# (sBoticsC)
-> Obs: O comando demonstrado não existe!
+## Demonstration
+Below is a gif of the power of snippets, demonstrated in C # (sBoticsC)
+> Note: The command shown does not exist!
+
 ![Demo](https://i.imgur.com/I0ltwwd.gif)
 
-## Instalação
+## Installation
 ### Via VS Code
-A instalação pelo VS Code é feita pelo marketplace, e pode ser realizada diretamente dentro dele pelos seguintes passos:
-  - Abra o VS Code
-  - Abra a aba `Extensões`
-  - Pesquise o nome da extensão
-  - Clique em `Instalar`
+The installation by VS Code is done by the marketplace, and can be performed directly within it by the following steps:
+  - Open the VS Code
+  - Open the `Extensions` tab
+  - Search for the extension name
+  - Click on `Install`
 
 ### Via GitHub
-A instalação pelo GitHub é feita pelos [releases](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases), seguindo os seguintes passos:
-  - Abra o [repositório no GitHub](https://github.com/gabrieldp23/sBotics_Snippets_vscode)
-  - Acesse as [releases](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases)
-  - Faça o download do arquivo `vsix` na [release mais recente](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases/latest)
-  - Instale no VS Code com esse arquivo
+The installation by GitHub is done by the [releases](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases), following the steps below:
+  - Open the [repository on GitHub](https://github.com/gabrieldp23/sBotics_Snippets_vscode)
+  - Access the [releases](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases)
+  - Download the `vsix` file in the [latest release](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases/latest)
+  - Install on VS Code with this file
 
-## Contribuição
-Esses são os atuais contribuintes do projeto, que ajudaram a criar ele do zero!
+## Contribution
+These are the current contributors to the project, who helped create it from scratch!
 
 <div align=center>
 
@@ -82,9 +83,14 @@ Esses são os atuais contribuintes do projeto, que ajudaram a criar ele do zero!
 
 </div>
 
-### Como contribuir
-Todos os tipos de contribuição são muito bem vindos e apreciados!
-  - Deixar uma star no projeto
-  - Encontrar e reportar bugs
-  - Enviar PRs para ajudar a resolver problemas ou adicionar novas features
-  - Compartilhar!
+### How to contribute
+All types of contributions are very welcome and appreciated!
+  - Leave a star in the repository
+  - Find and report bugss
+  - Submit PRs to help solve problems or add new features
+  - Share!
+
+## **sBotics simulator**
+<a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/instagram.png?raw=true"/></a>
+<a href="https://bit.ly/sboticsdiscord"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/discord.png?raw=true"/></a>
+<a href="https://weduc.natalnet.br/sbotics/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>
