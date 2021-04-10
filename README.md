@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">sBotics Snippets</h1>
-<p align="center">Snippets with <a href="https://weduc.natalnet.br/sbotics">sBotics</a> language support for VS Code</p>
+<p align="center">Snippets with <a href="https://weduc.natalnet.br/sbotics">sBotics</a> language support for VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README_pt_BR.md">pt_BR version</a></p>
 
 <h4 align="center">🚧 Under construction 🚧</h4>
 
