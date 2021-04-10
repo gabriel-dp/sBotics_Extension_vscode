@@ -24,7 +24,7 @@
     - [x] Commands
     - [x] Parameters
       - [x] Types
-  - [x] Snippets para C#
+  - [x] Snippets for C#
     - [x] Commands
     - [x] Parameters
       - [x] Types
