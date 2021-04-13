@@ -1,0 +1,398 @@
+{
+                "esperar": {
+                    "prefix": "esperar",
+                    "body": ["esperar(${1:Tempo[numero]})",],"description":"Espera de um tempo em milissegundos antes de executar o próximo comando. Os valores devem ser sempre inteiros maiores que 0."},
+                "ultra": {
+                    "prefix": "ultra",
+                    "body": ["ultra(${1:Sensor[numero]})",],"description":"Retorna um valor do tipo número com a distância percebida pelo sensor de ultrassom informado por um número na função. A numeração dos sensores de ultrassom estão disponíveis na aba sensores do tutorial do simulador."},
+                "direcao": {
+                    "prefix": "direcao",
+                    "body": ["direcao()",],"description":"Retorna o ângulo do robô em relação ao norte geográfico. O retorno é um valor do tipo número."},
+                "inclinacao": {
+                    "prefix": "inclinacao",
+                    "body": ["inclinacao()",],"description":"Retorna o ângulo de inclinação do robô em relação ao plano da arena. O retorno é um valor do tipo número."},
+                "temalgo": {
+                    "prefix": "temalgo",
+                    "body": ["temalgo(${1:Sensor[numero]}, ${2:Mínimo[numero]}, ${3:Máximo[numero]})",],"description":"Retorna se o sensor ultrassônico indicado (parâmetro 1)  está detectando algo entre as distâncias mínima (parâmetro 2) e máxima (parâmetro 3) indicadas. O retorno será verdadeiro caso um objeto seja percebido pelo sensor, e falso caso contrário."},
+                "frente": {
+                    "prefix": "frente",
+                    "body": ["frente(${1:Força[numero]})",],"description":"Aplica uma força (parametro1) nas rodas do robô no sentido direto. (Limites de força: negativo(300) a 300)"},
+                "tras": {
+                    "prefix": "tras",
+                    "body": ["tras(${1:Força[numero]})",],"description":"Aplica uma força nas rodas do robô no sentido inverso. (Limites de força: negativo(300) a 300)"},
+                "direita": {
+                    "prefix": "direita",
+                    "body": ["direita(${1:Força[numero]})",],"description":"Aplica uma força nas rodas do robô para que se mova em torno do eixo para a direita. (Limites de força: negativo(1000) a 1000)"},
+                "esquerda": {
+                    "prefix": "esquerda",
+                    "body": ["esquerda(${1:Força[numero]})",],"description":"Aplica uma força nas rodas do robô para que ele se mova em torno do eixo para a esquerda. (Limites de força: negativo(1000) a 1000)"},
+                "mover": {
+                    "prefix": "mover",
+                    "body": ["mover(${1:Força[numero]}, ${2:Força[numero]})",],"description":"Move o robô em diferentes direções dependendo da força aplicada. Deve ser indicada a força a ser aplicada na roda da esquerda e na da direita.(Limites de força: negativo(300) a 300 em curvas fora do eixo, negativo(300) a 300 para movimentações em linha reta e negativo(1000) a 1000 para giro no próprio eixo.)"},
+                "parar": {
+                    "prefix": "parar",
+                    "body": ["parar()",],"description":"Interrompe a aplicação de forças nas rodas do robô."},
+                "cor": {
+                    "prefix": "cor",
+                    "body": ["cor(${1:Sensor[numero]})",],"description":"Retorna a cor percebida pelo sensor indicado. A cor pode ser “VERMELHO”, “VERDE”, “AZUL”, “AMARELO”, “PRETO” e “BRANCO”. A numeração dos sensores de cor estão disponíveis na aba sensores do tutorial do simulador."},
+                "luz": {
+                    "prefix": "luz",
+                    "body": ["luz(${1:Sensor[numero]})",],"description":"Retorna um valor do tipo número com a quantidade de luz percebida pelo sensor de luz indicado. A numeração dos sensores de luz estão disponíveis na aba sensores do tutorial do simulador. "},
+                "escrever": {
+                    "prefix": "escrever",
+                    "body": ["escrever(${1:Linha do Console[numero]}, ${2:Texto[texto]})",],"description":"Imprime na linha especificada do console virtual o texto indicado. O console possui três linhas: 1, 2 e 3."},
+                "virartexto": {
+                    "prefix": "virartexto",
+                    "body": ["virartexto(${1:Número[numero]})",],"description":"Converte um valor do tipo número para o tipo texto."},
+                "abrir": {
+                    "prefix": "abrir",
+                    "body": ["abrir(${1:Tempo em Milissegundos[numero]})",],"description":"Abre a garra do atuador empilhadeira durante o tempo especificado em milissegundos."},
+                "fechar": {
+                    "prefix": "fechar",
+                    "body": ["fechar(${1:Tempo em Milissegundos[numero]})",],"description":"Fecha a garra do atuador empilhadeira durante o tempo especificado em milissegundos."},
+                "levantar": {
+                    "prefix": "levantar",
+                    "body": ["levantar(${1:Tempo em Milissegundos[numero]})",],"description":"Levanta o atuador pelo tempo indicado em milissegundos."},
+                "baixar": {
+                    "prefix": "baixar",
+                    "body": ["baixar(${1:Tempo em Milissegundos[numero]})",],"description":"Abaixa o atuador por um tempo indicado em milissegundos."},
+                "girarcima": {
+                    "prefix": "girarcima",
+                    "body": ["girarcima(${1:Tempo em Milissegundos[numero]})",],"description":"Gira o atuador para cima por um tempo indicado em milissegundos."},
+                "girarbaixo": {
+                    "prefix": "girarbaixo",
+                    "body": ["girarbaixo(${1:Tempo em Milissegundos[numero]})",],"description":"Gira o atuador para baixo por um tempo especificado em milissegundos."},
+                "escrevernumero": {
+                    "prefix": "escrevernumero",
+                    "body": ["escrevernumero(${1:Linha do Console[numero]}, ${2:Texto[texto]})",],"description":"Imprime na linha especificada do console virtual o número indicado. O console possui três linhas: 1, 2 e 3."},
+                "somar": {
+                    "prefix": "somar",
+                    "body": ["somar(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna soma dos dois números indicados. Também pode ser utilizado o símbolo + diretamente."},
+                "subtrair": {
+                    "prefix": "subtrair",
+                    "body": ["subtrair(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna a subtração dos dois números indicados. Também pode ser utilizado o símbolo - diretamente."},
+                "multiplicar": {
+                    "prefix": "multiplicar",
+                    "body": ["multiplicar(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna a multiplicação dos dois números indicados. Também pode ser utilizado o símbolo * diretamente."},
+                "dividir": {
+                    "prefix": "dividir",
+                    "body": ["dividir(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna a divisão dos dois números indicados. Também pode ser utilizado o símbolo / diretamente."},
+                "comentar": {
+                    "prefix": "comentar",
+                    "body": ["comentar(${1:comentário[texto]})",],"description":"Insere comentários no código para documentação, essa função não altera o funcionamento do robô. Pode ser utilizado também o caracter # para inserir comentários de uma linha."},
+                "limparconsole": {
+                    "prefix": "limparconsole",
+                    "body": ["limparconsole()",],"description":"Apaga todo texto previamente escrito no console."},
+                "concatenar": {
+                    "prefix": "concatenar",
+                    "body": ["concatenar(${1:Texto A[texto]}, ${2:Texto B[texto]})",],"description":"Realiza a concatenação(junção) de dois textos em um só."},
+                "resto": {
+                    "prefix": "resto",
+                    "body": ["resto(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna o resto da divisão dos dois número indicados."},
+                "negativo": {
+                    "prefix": "negativo",
+                    "body": ["negativo(${1:Número[numero]})",],"description":"Negativa o número indicado."},
+                "arredondar": {
+                    "prefix": "arredondar",
+                    "body": ["arredondar(${1:Número[numero]})",],"description":"Arredonda o número indicado."},
+                "substituir": {
+                    "prefix": "substituir",
+                    "body": ["substituir(${1:Parâmetro A[texto]}, ${2:Parâmetro B[texto]}, ${3:Parâmetro C[texto]})",],"description":"Recebe um texto e substitui uma sequência de caracteres indicada pela outra fornecida."},
+                "tempo": {
+                    "prefix": "tempo",
+                    "body": ["tempo()",],"description":"Retorna o tempo em milissegundos decorrido desde o início da execução da rotina."},
+                "mapeamento": {
+                    "prefix": "mapeamento",
+                    "body": ["mapeamento(${1:Parâmetro A[numero]}, ${2:Mínimo Escala Início[numero]}, ${3:Máximo Escala Início[numero]}, ${4:Mínimo Escala Final[numero]}, ${5:Máximo Escala Final[numero]})",],"description":"Mapeia um número de um intervalo a outro."},
+                "modulo": {
+                    "prefix": "modulo",
+                    "body": ["modulo(${1:Parâmetro[numero]})",],"description":"Retorna o módulo do número indicado."},
+                "interromper": {
+                    "prefix": "interromper",
+                    "body": ["interromper()",],"description":"Interrompe a execução do laço de repetição (enquanto - farei, farei - enquanto, repita e para) mais interno. OBS: caso seja utilizado fora de um laço de repetição o simulador acusará um erro."},
+                "corverde": {
+                    "prefix": "corverde",
+                    "body": ["corverde(${1:Sensor[numero]})",],"description":"Retorna a intensidade da cor verde percebida pelo sensor indicado. A numeração dos sensores de cor estão disponíveis na aba sensores do tutorial do simulador."},
+                "corazul": {
+                    "prefix": "corazul",
+                    "body": ["corazul(${1:Sensor[numero]})",],"description":"Retorna a intensidade da cor azul percebida pelo sensor indicado. A numeração dos sensores de cor estão disponíveis na aba sensores do tutorial do simulador."},
+                "corvermelha": {
+                    "prefix": "corvermelha",
+                    "body": ["corvermelha(${1:Sensor[numero]})",],"description":"Retorna a intensidade da cor vermelha percebida pelo sensor indicado. A numeração dos sensores de cor estão disponíveis na aba sensores do tutorial do simulador."},
+                "rotacionar": {
+                    "prefix": "rotacionar",
+                    "body": ["rotacionar(${1:Força[numero]}, ${2:Ângulo[numero]})",],"description":"Aplica uma força nas rodas do robô para que ele rotacione em torno do eixo uma determinada angulação, positiva ou negativa, a partir de sua direção atual.(Limite de força: 0 a 500)"},
+                "toque": {
+                    "prefix": "toque",
+                    "body": ["toque(${1:Sensor[numero]})",],"description":"Retorna o estado do sensor de toque especificado. O retorno pode ser verdadeiro ou falso. A numeração dos sensores de toque estão disponíveis na aba sensores do tutorial do simulador. "},
+                "anguloatuador": {
+                    "prefix": "anguloatuador",
+                    "body": ["anguloatuador()",],"description":"Retorna o número correspondente ao ângulo de inclinação do atuador robô em relação ao plano."},
+                "velocidadeatuador": {
+                    "prefix": "velocidadeatuador",
+                    "body": ["velocidadeatuador(${1:Força[numero]})",],"description":"Modifica a força aplicada na movimentação dos atuadores. (Limite de força: 0 a 150)"},
+                "raizquadrada": {
+                    "prefix": "raizquadrada",
+                    "body": ["raizquadrada(${1:Número[numero]})",],"description":"Retorna o número correspondente a raiz quadrada do número indicado."},
+                "concatenar3": {
+                    "prefix": "concatenar3",
+                    "body": ["concatenar3(${1:Texto A[texto]}, ${2:Texto B[texto]}, ${3:Texto C[texto]})",],"description":"Realiza a concatenação(junção) de três textos em um só."},
+                "concatenar4": {
+                    "prefix": "concatenar4",
+                    "body": ["concatenar4(${1:[texto]}, ${2:Texto A[texto]}, ${3:Texto B[texto]}, ${4:Texto C[texto]}, ${5:Texto D[texto]})",],"description":"Realiza a concatenação(junção) de quatro textos em um só."},
+                "textoposicao": {
+                    "prefix": "textoposicao",
+                    "body": ["textoposicao(${1:Posição[numero]}, ${2:Texto[texto]})",],"description":"Retorna um texto com o caractere que se encontra na posição indicada do texto fornecido."},
+                "virarnumero": {
+                    "prefix": "virarnumero",
+                    "body": ["virarnumero(${1:número[texto]})",],"description":"Converte um texto para número."},
+                "textotamanho": {
+                    "prefix": "textotamanho",
+                    "body": ["textotamanho(${1:Texto[texto]})",],"description":"Retorna a quantidade de caracteres do texto indicado."},
+                "acenderled": {
+                    "prefix": "acenderled",
+                    "body": ["acenderled(${1:Cor[texto]})",],"description":"Acende o led na cor especificada. A cor pode ser VERMELHO, VERDE, AZUL, AMARELO, PRETO ou BRANCO. "},
+                "acenderledrgb": {
+                    "prefix": "acenderledrgb",
+                    "body": ["acenderledrgb(${1:Vermelho[numero]}, ${2:Verde[numero]}, ${3:Azul[numero]})",],"description":"Acende o led na cor especificada a partir de um código código RGB. O parâmetro 1 corresponde ao R, o parâmetro 2 ao G e o parâmetro 3 ao B. Os valores de RGB recebidos podem variar de 0 a 255."},
+                "apagarled": {
+                    "prefix": "apagarled",
+                    "body": ["apagarled()",],"description":"Apaga o led."},
+                "adicionarlistanumero": {
+                    "prefix": "adicionarlistanumero",
+                    "body": ["adicionarlistanumero(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Insere na lista indicada (Parâmetro 1) o número especificado (Parâmetro 2). As listas são criadas automaticamente ao inserir números nelas."},
+                "removerlistanumero": {
+                    "prefix": "removerlistanumero",
+                    "body": ["removerlistanumero(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Remove na lista (Parâmetro 1) o número presente na posição indicada (Parâmetro 2). "},
+                "listanumero": {
+                    "prefix": "listanumero",
+                    "body": ["listanumero(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna o número presente na lista (Parâmetro 1) e na posição especificada (Parâmetro 2). Caso a lista não possua nenhum elemento na posição especificada o retorno será 0."},
+                "tamanholistanumero": {
+                    "prefix": "tamanholistanumero",
+                    "body": ["tamanholistanumero(${1:Número da Lista[numero]})",],"description":"Retorna a quantidade de elementos da lista indicada. "},
+                "imprimirlistanumero": {
+                    "prefix": "imprimirlistanumero",
+                    "body": ["imprimirlistanumero(${1:Número da Lista[numero]})",],"description":"Retorna um texto com os elementos da lista indicada separados por |. "},
+                "adicionarlistatexto": {
+                    "prefix": "adicionarlistatexto",
+                    "body": ["adicionarlistatexto(${1:Parâmetro A[numero]}, ${2:Parâmetro B[texto]})",],"description":"Insere na lista indicada (Parâmetro 1) o texto especificado (Parâmetro 2).  As listas são criadas automaticamente ao inserir textos nelas."},
+                "removerlistatexto": {
+                    "prefix": "removerlistatexto",
+                    "body": ["removerlistatexto(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Remove na lista (Parâmetro 1) o texto presente na posição indicada (Parâmetro 2). "},
+                "listatexto": {
+                    "prefix": "listatexto",
+                    "body": ["listatexto(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna o texto presente na lista (Parâmetro 1) e na posição especificada (Parâmetro 2). Caso a lista não possua nenhum elemento na posição especificada o retorno será ."},
+                "tamanholistatexto": {
+                    "prefix": "tamanholistatexto",
+                    "body": ["tamanholistatexto(${1:Número da Lista[numero]})",],"description":"Retorna a quantidade de elementos da lista indicada. "},
+                "imprimirlistatexto": {
+                    "prefix": "imprimirlistatexto",
+                    "body": ["imprimirlistatexto(${1:Número da Lista[numero]})",],"description":"Retorna um texto com os elementos da lista indicada separados por |. "},
+                "truncar": {
+                    "prefix": "truncar",
+                    "body": ["truncar(${1:Parâmetro[numero]})",],"description":"Retorna a parte inteira do número indicado."},
+                "concatenar5": {
+                    "prefix": "concatenar5",
+                    "body": ["concatenar5(${1:Parâmetro A[texto]}, ${2:Parâmetro B[texto]}, ${3:Parâmetro C[texto]}, ${4:Parâmetro D[texto]}, ${5:Parâmetro E[texto]})",],"description":"Realiza a concatenação(junção) de cinco textos em um só."},
+                "frenterotacao": {
+                    "prefix": "frenterotacao",
+                    "body": ["frenterotacao(${1:Força[numero]}, ${2:Rotações[numero]})",],"description":"Move o robô para frente com a força indicada pela quantidade de rotações fornecida.(Limite de força: 300)"},
+                "trasrotacao": {
+                    "prefix": "trasrotacao",
+                    "body": ["trasrotacao(${1:Força[numero]}, ${2:Rotações[numero]})",],"description":"Move o robô para trás com a força indicada pela quantidade de rotações fornecida.(Limite de força: 300)"},
+                "registrar": {
+                    "prefix": "registrar",
+                    "body": ["registrar()",],"description":"Habilita o registro em arquivo do conteúdo escrito no console."},
+                "pararregistro": {
+                    "prefix": "pararregistro",
+                    "body": ["pararregistro()",],"description":"Desabilita o registro em arquivo do conteúdo escrito no console."},
+                "limparregistro": {
+                    "prefix": "limparregistro",
+                    "body": ["limparregistro()",],"description":"Apagar o conteúdo salvo no arquivo de registro. "},
+                "aleatorio": {
+                    "prefix": "aleatorio",
+                    "body": ["aleatorio(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna um número inteiro aleatório entre os números inteiros fornecidos."},
+                "temporizador": {
+                    "prefix": "temporizador",
+                    "body": ["temporizador()",],"description":"Retorna o tempo em milissegundos decorrido desde o início da execução da rotina ou desde o último comando zerartemporizador()."},
+                "zerartemporizador": {
+                    "prefix": "zerartemporizador",
+                    "body": ["zerartemporizador()",],"description":"Zera o tempo decorrido no temporizador e inicia uma nova contagem."},
+                "seno": {
+                    "prefix": "seno",
+                    "body": ["seno(${1:Graus[numero]})",],"description":"Retorna o seno do ângulo informado em graus."},
+                "cosseno": {
+                    "prefix": "cosseno",
+                    "body": ["cosseno(${1:Graus[numero]})",],"description":"Retorna o cosseno do ângulo informado em graus."},
+                "tangente": {
+                    "prefix": "tangente",
+                    "body": ["tangente(${1:Graus[numero]})",],"description":"Retorna a tangente do ângulo informado em graus."},
+                "arcoseno": {
+                    "prefix": "arcoseno",
+                    "body": ["arcoseno(${1:Graus[numero]})",],"description":"Retorna o arco cujo seno é igual ao valor informado. "},
+                "arcocosseno": {
+                    "prefix": "arcocosseno",
+                    "body": ["arcocosseno(${1:Graus[numero]})",],"description":"Retorna o arco cujo cosseno é igual ao valor informado. "},
+                "arcotangente": {
+                    "prefix": "arcotangente",
+                    "body": ["arcotangente(${1:Graus[numero]})",],"description":"Retorna o arco cuja tangente é igual ao valor informado. "},
+                "pi": {
+                    "prefix": "pi",
+                    "body": ["pi()",],"description":"Retorna o valor da constante pi."},
+                "limparlinha": {
+                    "prefix": "limparlinha",
+                    "body": ["limparlinha(${1:Linha do Console[numero]})",],"description":"Apaga o texto escrito na linha especificada do console. O console possui três linhas: 1, 2 e 3."},
+                "registrartexto": {
+                    "prefix": "registrartexto",
+                    "body": ["registrartexto(${1:Texto[texto]})",],"description":"Registra o texto informado em um arquivo chamado consoleLog.txt"},
+                "registrarnumero": {
+                    "prefix": "registrarnumero",
+                    "body": ["registrarnumero(${1:Número[numero]})",],"description":"Registra o número informado em um arquivo chamado consoleLog.txt"},
+                "motordireita": {
+                    "prefix": "motordireita",
+                    "body": ["motordireita(${1:Força[numero]})",],"description":"Aplica a força indicada no motor da direita. (Limites de força: negativo(300) a 300)"},
+                "motoresquerda": {
+                    "prefix": "motoresquerda",
+                    "body": ["motoresquerda(${1:Força[numero]})",],"description":"Aplica a força indicada no motor da esquerda. (Limite de força: negativo(300) a 300)"},
+                "ajustarcor": {
+                    "prefix": "ajustarcor",
+                    "body": ["ajustarcor(${1:Sensibilidade[numero]})",],"description":"Ajusta a sensibilidade do sensor de cor. Deve ser fornecido um valor de sensibilidade que varia de 0 a 100. A sensibilidade padrão é 25."},
+                "angulogiroatuador": {
+                    "prefix": "angulogiroatuador",
+                    "body": ["angulogiroatuador()",],"description":"Retorna o número correspondente ao ângulo de giro do atuador robô em relação ao plano."},
+                "ajustarprecisao": {
+                    "prefix": "ajustarprecisao",
+                    "body": ["ajustarprecisao(${1:Precisão[numero]})",],"description":"Ajusta a quantidade de casas decimais manipuladas para o valor especificado."},
+                "tocar": {
+                    "prefix": "tocar",
+                    "body": ["tocar(${1:Alto-Falante[numero]}, ${2:Nota Musical[texto]}, ${3:Tempo em Milissegundos[numero]})",],"description":"Toca uma nota musical pelo tempo indicado no alto-falante especificado. As notas musicais podem ser: do, re, mi, fa, sol, la e si."},
+                "tocarsom": {
+                    "prefix": "tocarsom",
+                    "body": ["tocarsom(${1:Alto-Falante[numero]}, ${2:Frequência[numero]}, ${3:Tempo em Milissegundos[numero]}, ${4:Tipo de Onda[texto]})",],"description":"Toca no alto-falante informado, a frequência especificada por um determinado tempo utilizando a onda informada. Os valores de frequência, em unidade própria do simulador, variam de 0 a 300 e as ondas podem ser QUADRADA, DENTE-DE-SERRA, RUIDO ou MUDO."},
+                "ajustaronda": {
+                    "prefix": "ajustaronda",
+                    "body": ["ajustaronda(${1:Tipo de Onda[texto]})",],"description":"Ajusta o tipo de onda que irá modular o som emitido na função tocar."},
+                "parasom": {
+                    "prefix": "parasom",
+                    "body": ["parasom(${1:Alto-Falante[numero]})",],"description":"Interrompe a execução do som no alto-falante especificado."},
+                "pararsons": {
+                    "prefix": "pararsons",
+                    "body": ["pararsons()",],"description":"Interrompe a execução do som em todos os alto-falantes."},
+                "virarfrequencia": {
+                    "prefix": "virarfrequencia",
+                    "body": ["virarfrequencia(${1:Frequência em Hertz[numero]})",],"description":"Converte o valor de frequência em Hertz especificado para a unidade de frequência do simulador."},
+                "virarhertz": {
+                    "prefix": "virarhertz",
+                    "body": ["virarhertz(${1:Frequência na Unidade do Simulador[numero]})",],"description":"Converte o valor de frequência na unidade do simulador especificado para Hertz."},
+                "tocarsomhertz": {
+                    "prefix": "tocarsomhertz",
+                    "body": ["tocarsomhertz(${1:Alto-Falante[numero]}, ${2:Frequência[numero]}, ${3:Tempo em Milissegundos[numero]}, ${4:Tipo de Onda[texto]})",],"description":"Toca no alto-falante informado, a frequência especificada por um determinado tempo utilizando a onda informada. Os valores de frequência informados são em Hertz e as ondas podem ser QUADRADA, DENTE-DE-SERRA, RUIDO ou MUDO."},
+                "ordenarlistanumero": {
+                    "prefix": "ordenarlistanumero",
+                    "body": ["ordenarlistanumero(${1:Número da Lista[numero]})",],"description":"Ordena, em ordem crescente, os elementos da lista indicada."},
+                "inverterlistanumero": {
+                    "prefix": "inverterlistanumero",
+                    "body": ["inverterlistanumero(${1:Número da Lista[numero]})",],"description":"Inverte a ordem dos elementos da lista indicada."},
+                "pertencelistanumero": {
+                    "prefix": "pertencelistanumero",
+                    "body": ["pertencelistanumero(${1:Número da Lista[numero]}, ${2:Parâmetro[numero]})",],"description":"Verifica se um elemento específico pertence a lista indicada."},
+                "alterarlistanumero": {
+                    "prefix": "alterarlistanumero",
+                    "body": ["alterarlistanumero(${1:Número da Lista[numero]}, ${2:Posição na Lista[numero]}, ${3:Parâmetro[numero]})",],"description":"Substitui o elemento em uma determinada posição da lista informada por outro."},
+                "ordenarlistatexto": {
+                    "prefix": "ordenarlistatexto",
+                    "body": ["ordenarlistatexto(${1:Número da Lista[numero]})",],"description":"Ordena, em ordem alfabética, os elementos da lista indicada."},
+                "inverterlistatexto": {
+                    "prefix": "inverterlistatexto",
+                    "body": ["inverterlistatexto(${1:Número da Lista[numero]})",],"description":"Inverte a ordem dos elementos da lista indicada."},
+                "pertencelistatexto": {
+                    "prefix": "pertencelistatexto",
+                    "body": ["pertencelistatexto(${1:Número da Lista[numero]}, ${2:Parâmetro[numero]})",],"description":"Verifica se um elemento específico pertence a lista indicada."},
+                "alterarlistatexto": {
+                    "prefix": "alterarlistatexto",
+                    "body": ["alterarlistatexto(${1:Número da Lista[numero]}, ${2:Posição na Lista[numero]}, ${3:Parâmetro[texto]})",],"description":"Substitui o elemento em uma determinada posição da lista informada por outro."},
+                "velocidademotordireita": {
+                    "prefix": "velocidademotordireita",
+                    "body": ["velocidademotordireita()",],"description":"Retorna a velocidade do motor da direita."},
+                "velocidademotoresquerda": {
+                    "prefix": "velocidademotoresquerda",
+                    "body": ["velocidademotoresquerda()",],"description":"Retorna a velocidade do motor da esquerda."},
+                "escreverbooleano": {
+                    "prefix": "escreverbooleano",
+                    "body": ["escreverbooleano(${1:Linha do Console[numero]}, ${2:Parâmetro[booleano]})",],"description":"Imprime na linha especificada do console virtual o booleano indicado. O console possui três linhas: 1, 2 e 3."},
+                "registrarbooelano": {
+                    "prefix": "registrarbooelano",
+                    "body": ["registrarbooelano(${1:Parâmetro[booleano]})",],"description":"Registra o booleano informado em um arquivo chamado consoleLog.txt"},
+                "potencia": {
+                    "prefix": "potencia",
+                    "body": ["potencia(${1:Base[numero]}, ${2:Expoente[numero]})",],"description":"Retorna o número correspondente a base elevada ao expoente indicado."},
+                "pintar": {
+                    "prefix": "pintar",
+                    "body": ["pintar()",],"description":"Habilita o pincel para pintura. "},
+                "pararpintura": {
+                    "prefix": "pararpintura",
+                    "body": ["pararpintura()",],"description":"Recolhe o pincel interrompendo a pintura."},
+                "corpincel": {
+                    "prefix": "corpincel",
+                    "body": ["corpincel(${1:Cor[texto]})",],"description":"Altera o pincel por um da cor especificada. A cor pode ser “VERMELHO”, “VERDE”, “AZUL”, “AMARELO”, “PRETO” e “BRANCO”."},
+                "corpincelrgb": {
+                    "prefix": "corpincelrgb",
+                    "body": ["corpincelrgb(${1:Vermelho[numero]}, ${2:Verde[numero]}, ${3:Azul[numero]})",],"description":"Altera o pincel por um na cor RGB especificada."},
+                "ligarventilador": {
+                    "prefix": "ligarventilador",
+                    "body": ["ligarventilador()",],"description":"Liga o atuador ventilador disponível no Robô 3."},
+                "desligarventilador": {
+                    "prefix": "desligarventilador",
+                    "body": ["desligarventilador()",],"description":"Desligar o atuador ventilador disponível no Robô 3."},
+                "temperatura": {
+                    "prefix": "temperatura",
+                    "body": ["temperatura()",],"description":"Retorna a temperatura percebida pelo sensor de temperatura do robô."},
+                "temvitima": {
+                    "prefix": "temvitima",
+                    "body": ["temvitima()",],"description":"Retorna verdadeiro se existir uma ou mais vítimas no atuador."},
+                "forcamotor": {
+                    "prefix": "forcamotor",
+                    "body": ["forcamotor()",],"description":"Retorna a velocidade de rotação dos motores. "},
+     "se": {
+          "prefix": "?se",
+          "body": [
+               "se (${1:condicao}) entao {\n\n}"
+          ],
+          "description": "Estrutura que executa os comandos apenas se a condição definida for verdadeira. (if)"
+     },
+     "sesenao": {
+          "prefix": "?sesenao",
+          "body": [
+               "se (${1:condicao}) entao {\n\n} senao {\n\n}"
+          ],
+          "description": "Estrutura que avalia a condição e executa os comandos do 'se' caso seja verdadeira e  do 'senao' caso seja falsa. (if | else)"
+     },
+     "sesenaose": {
+          "prefix": "?sesenaose",
+          "body": [
+               "se (${1:condicao}) entao {\n\n} senao se (${1:condicao}) entao {\n\n} "
+          ],
+          "description": "Estrutura que possibilita verificar outra condição 'se', caso a primeira seja falsa. (if | else if)"
+     },
+     "enquanto": {
+          "prefix": "?enquanto",
+          "body": [
+               "enquanto (${1:condicao}) farei {\n\n}"
+          ],
+          "description": "Laço de repetição que executa os comandos até que a condição seja falsa (while)"
+     },
+     "farei": {
+          "prefix": "?farei",
+          "body": [
+               "farei {\n\n} enquanto (${1:condicao})"
+          ],
+          "description": "Laço de repetição que executa os comandos antes de verificar a condição, até que seja falsa. (do while)"
+     },
+     "para": {
+          "prefix": "?para",
+          "body": [
+               "para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\n}"
+          ],
+          "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada. (for)"
+     }
+}
