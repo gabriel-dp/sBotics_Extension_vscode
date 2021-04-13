@@ -17,19 +17,10 @@
 
 ## Features
   - Snippets for rEduc in Brazilian Portuguese
-    - Commands
-    - Parameters
-      - Types
   - Snippets for rEduc in English
-    - Commands
-    - Parameters
-      - Types
   - Snippets for C#
-    - Commands
-    - Parameters
-      - Types
   - Automatic update of snippets
-  - Themes!
+  - Theme support
 
 ## Demonstration
 Below is a gif of the power of snippets, demonstrated in C # (sBoticsC)

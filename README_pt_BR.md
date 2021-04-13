@@ -19,19 +19,10 @@
 
 ## Features
   - Snippets para rEduc em Português do Brasil
-    - Comandos
-    - Parâmetros
-      - Tipos
   - Snippets para rEduc em Inglês
-    - Comandos
-    - Parâmetros
-      - Tipos
   - Snippets para C#
-    - Comandos
-    - Parâmetros
-      - Tipos
   - Atualização automática dos snippets
-  - Temas!
+  - Suporte para temas
 
 ## Demonstração
 Abaixo tem um gif do poder dos snippets, demonstrado em C# (sBoticsC)
