@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">sBotics Snippets</h1>
-<p align="center">Snippets with <a href="https://weduc.natalnet.br/sbotics">sBotics</a> language support for VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README_pt_BR.md"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/>pt_BR version<img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/></a></p>
+<p align="center">Snippets with <a href="https://sbotics.weduc.natalnet.br">sBotics</a> language support for VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README_pt_BR.md"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/>pt_BR version<img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/></a></p>
 
 <h4 align="center">🚧 Under construction 🚧</h4>
 
@@ -16,19 +16,20 @@
 </p>
 
 ## Features
-  - [x] Snippets for rEduc in Brazilian Portuguese
-    - [x] Commands
-    - [x] Parameters
-      - [x] Types
-  - [x] Snippets for rEduc in English
-    - [x] Commands
-    - [x] Parameters
-      - [x] Types
-  - [x] Snippets for C#
-    - [x] Commands
-    - [x] Parameters
-      - [x] Types
-  - [x] Automatic update of snippets
+  - Snippets for rEduc in Brazilian Portuguese
+    - Commands
+    - Parameters
+      - Types
+  - Snippets for rEduc in English
+    - Commands
+    - Parameters
+      - Types
+  - Snippets for C#
+    - Commands
+    - Parameters
+      - Types
+  - Automatic update of snippets
+  - Themes!
 
 ## Demonstration
 Below is a gif of the power of snippets, demonstrated in C # (sBoticsC)
@@ -93,4 +94,4 @@ All types of contributions are very welcome and appreciated!
 ## **sBotics simulator**
 <a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/instagram.png?raw=true"/></a>
 <a href="https://bit.ly/sboticsdiscord"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/discord.png?raw=true"/></a>
-<a href="https://weduc.natalnet.br/sbotics/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>
+<a href="https://sbotics.weduc.natalnet.br/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>

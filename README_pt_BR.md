@@ -5,7 +5,7 @@
 </p>
 <h1 align="center">sBotics Snippets</h1>
 
-<p align="center">Snippets com suporte às lingugens do <a href="https://weduc.natalnet.br/sbotics">sBotics</a> para VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README.md"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"/>Versão em inglês<img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"/></a></p>
+<p align="center">Snippets com suporte às lingugens do <a href="https://sbotics.weduc.natalnet.br">sBotics</a> para VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README.md"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"/>Versão em inglês<img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"/></a></p>
 
 
 <h4 align="center">🚧 Em construção 🚧</h4>
@@ -18,19 +18,20 @@
 </p>
 
 ## Features
-  - [x] Snippets para rEduc em Português do Brasil
-    - [x] Comandos
-    - [x] Parâmetros
-      - [x] Tipos
-  - [x] Snippets para rEduc em Inglês
-    - [x] Comandos
-    - [x] Parâmetros
-      - [x] Tipos
-  - [x] Snippets para C#
-    - [x] Comandos
-    - [x] Parâmetros
-      - [x] Tipos
-  - [x] Atualização automática dos snippets
+  - Snippets para rEduc em Português do Brasil
+    - Comandos
+    - Parâmetros
+      - Tipos
+  - Snippets para rEduc em Inglês
+    - Comandos
+    - Parâmetros
+      - Tipos
+  - Snippets para C#
+    - Comandos
+    - Parâmetros
+      - Tipos
+  - Atualização automática dos snippets
+  - Temas!
 
 ## Demonstração
 Abaixo tem um gif do poder dos snippets, demonstrado em C# (sBoticsC)
@@ -95,4 +96,4 @@ Todos os tipos de contribuição são muito bem vindos e apreciados!
 ## **Simulador sBotics**
 <a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/instagram.png?raw=true"/></a>
 <a href="https://bit.ly/sboticsdiscord"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/discord.png?raw=true"/></a>
-<a href="https://weduc.natalnet.br/sbotics/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>
+<a href="https://sbotics.weduc.natalnet.br/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>
