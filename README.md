@@ -20,7 +20,7 @@
   - Snippets for rEduc in English
   - Snippets for C#
   - Automatic update of snippets
-  - Theme support
+  - Theme support!
 
 ## Demonstration
 Below is a gif of the power of snippets, demonstrated in C # (sBoticsC)

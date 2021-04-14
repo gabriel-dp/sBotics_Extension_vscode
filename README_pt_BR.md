@@ -22,7 +22,7 @@
   - Snippets para rEduc em Inglês
   - Snippets para C#
   - Atualização automática dos snippets
-  - Suporte para temas
+  - Suporte para temas!
 
 ## Demonstração
 Abaixo tem um gif do poder dos snippets, demonstrado em C# (sBoticsC)
