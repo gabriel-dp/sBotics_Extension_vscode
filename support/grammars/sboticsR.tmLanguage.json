@@ -1,1 +1,72 @@
-{"$schema":"https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json","name":"sboticsR","patterns":[{"include":"#keywords"},{"include":"#structures"},{"include":"#variables"},{"include":"#movement"},{"include":"#read"},{"include":"#write"},{"include":"#others"}],"repository":{"keywords":{"patterns":[{"name":"keywords.control.sboticsR","match":"\\b(se|senao|entao|enquanto|farei|para|if|else|while|for|to|switch|case|default|return|goto|foreach|in)\\b"}]},"structures":{"patterns":[{"name":"structures.control.sboticsR","match":"\\b(inicio|begin|fim|end|tarefa|task)\\b"}]},"variables":{"patterns":[{"name":"variables.control.sboticsR","match":"\\b(numero|texto|booleano|number|string|boolean)\\b"}]},"movement":{"patterns":[{"name":"movement.control.sboticsR","match":"\\b(frente|tras|direita|esquerda|mover|parar|abrir|fechar|levantar|baixar|girarcima|girarbaixo|rotacionar|velocidadeatuador|frenterotacao|trasrotacao|motordireita|motoresquerda|velocidademotordireita|velocidademotoresquerda|ligarventilador|desligarventilador|forcamotor|forward|backwards|right|left|move|stop|open|close|raise|lower|turnUp|turnDown|rotate|actuatorVelocity|forwardRotation|backwardsRotation|rightMotor|leftMotor|rightMotorSpeed|leftMotorSpeed|turnFanOn|turnFanOff|motorSpeed)\\b"}]},"read":{"patterns":[{"name":"read.control.sboticsR","match":"\\b(ultra|direcao|inclinacao|temalgo|cor|luz|tempo|corverde|corazul|corvermelha|toque|anguloatuador|temporizador|angulogiroatuador|temperatura|temvitima|ultra|compass|hasObject|color|light|time|greenColor|blueColor|redColor|touch|actuatorAngle|stopwatch|actuatorScoopAngle|temperature|hasAnyVictim|inclination)\\b"}]},"write":{"patterns":[{"name":"write.control.sboticsR","match":"\\b(escrever|virartexto|escrevernumero|registrar|pararregistro|limparregistro|registrartexto|registrarnumero|escreverbooleano|registrarbooelano|pintar|pararpintura|corpincel|corpincelrgb|write|convertToString|writeNumber|register|stopRegister|clearRegister|registerString|registerNumber|writeBoolean|registerBoolean|paint|stopPainting|pencilColor|pencilRgbColor)\\b"}]},"others":{"patterns":[{"name":"others.control.sboticsR","match":"\\b(esperar|somar|subtrair|multiplicar|dividir|comentar|limparconsole|concatenar|resto|negativo|arredondar|substituir|mapeamento|modulo|interromper|raizquadrada|concatenar3|concatenar4|textoposicao|virarnumero|textotamanho|acenderled|acenderledrgb|apagarled|adicionarlistanumero|removerlistanumero|listanumero|tamanholistanumero|imprimirlistanumero|adicionarlistatexto|removerlistatexto|listatexto|tamanholistatexto|imprimirlistatexto|truncar|concatenar5|aleatorio|zerartemporizador|seno|cosseno|tangente|arcoseno|arcocosseno|arcotangente|pi|limparlinha|ajustarcor|ajustarprecisao|tocar|tocarsom|ajustaronda|parasom|pararsons|virarfrequencia|virarhertz|tocarsomhertz|ordenarlistanumero|inverterlistanumero|pertencelistanumero|alterarlistanumero|ordenarlistatexto|inverterlistatexto|pertencelistatexto|alterarlistatexto|potencia|wait|add|subtract|multiply|divide|comment|clearConsole|concatenate|mod|minus|round|substitute|mapping|absolute|breakLoop|squareRoot|concatenate3|concatenate4|charPosition|convertToNumber|stringLength|turnLedOn|turnRgbLedOn|turnLedOff|addNumberList|removeNumberList|numberList|numberListSize|printNumberList|addStringList|removeStringList|stringList|stringListSize|printStringList|truncate|concatenate5|random|resetStopwatch|sine|cosine|tangent|arcsine|arccosine|arctangent|pi|clearLine|adjustColor|setPrecision|playNote|playSound|changeSoundWave|stopSound|stopAllSounds|convertToFrequency|convertToHertz|playSoundHertz|sortNumberList|reverseNumberList|containsNumberList|setNumberList|sortStringList|reverseStringList|containsStringList|setStringList|pow)\\b"}]}},"scopeName":"source.sboticsR"}
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "sboticsR",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#structures" },
+    { "include": "#variables" },
+    { "include": "#movement" },
+    { "include": "#read" },
+    { "include": "#write" },
+    { "include": "#others" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keywords.control.sboticsR",
+          "match": "\\b(se|senao|entao|enquanto|farei|para|if|else|while|for|to|switch|case|default|return|goto|foreach|in)\\b"
+        }
+      ]
+    },
+    "structures": {
+      "patterns": [
+        {
+          "name": "structures.control.sboticsR",
+          "match": "\\b(inicio|begin|fim|end|tarefa|task)\\b"
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variables.control.sboticsR",
+          "match": "\\b(numero|texto|booleano|number|string|boolean)\\b"
+        }
+      ]
+    },
+    "movement": {
+      "patterns": [
+        {
+          "name": "movement.control.sboticsR",
+          "match": "\\b(frente|tras|direita|esquerda|mover|parar|abrir|fechar|levantar|baixar|girarcima|girarbaixo|rotacionar|velocidadeatuador|frenterotacao|trasrotacao|motordireita|motoresquerda|velocidademotordireita|velocidademotoresquerda|ligarventilador|desligarventilador|forcamotor|forward|backwards|right|left|move|stop|open|close|raise|lower|turnUp|turnDown|rotate|actuatorVelocity|forwardRotation|backwardsRotation|rightMotor|leftMotor|rightMotorSpeed|leftMotorSpeed|turnFanOn|turnFanOff|motorSpeed)\\b"
+        }
+      ]
+    },
+    "read": {
+      "patterns": [
+        {
+          "name": "read.control.sboticsR",
+          "match": "\\b(ultra|direcao|inclinacao|temalgo|cor|luz|tempo|corverde|corazul|corvermelha|toque|anguloatuador|temporizador|angulogiroatuador|temperatura|temvitima|ultra|compass|hasObject|color|light|time|greenColor|blueColor|redColor|touch|actuatorAngle|stopwatch|actuatorScoopAngle|temperature|hasAnyVictim|inclination)\\b"
+        }
+      ]
+    },
+    "write": {
+      "patterns": [
+        {
+          "name": "write.control.sboticsR",
+          "match": "\\b(escrever|virartexto|escrevernumero|registrar|pararregistro|limparregistro|registrartexto|registrarnumero|escreverbooleano|registrarbooelano|pintar|pararpintura|corpincel|corpincelrgb|write|convertToString|writeNumber|register|stopRegister|clearRegister|registerString|registerNumber|writeBoolean|registerBoolean|paint|stopPainting|pencilColor|pencilRgbColor)\\b"
+        }
+      ]
+    },
+    "others": {
+      "patterns": [
+        {
+          "name": "others.control.sboticsR",
+          "match": "\\b(esperar|somar|subtrair|multiplicar|dividir|comentar|limparconsole|concatenar|resto|negativo|arredondar|substituir|mapeamento|modulo|interromper|raizquadrada|concatenar3|concatenar4|textoposicao|virarnumero|textotamanho|acenderled|acenderledrgb|apagarled|adicionarlistanumero|removerlistanumero|listanumero|tamanholistanumero|imprimirlistanumero|adicionarlistatexto|removerlistatexto|listatexto|tamanholistatexto|imprimirlistatexto|truncar|concatenar5|aleatorio|zerartemporizador|seno|cosseno|tangente|arcoseno|arcocosseno|arcotangente|pi|limparlinha|ajustarcor|ajustarprecisao|tocar|tocarsom|ajustaronda|parasom|pararsons|virarfrequencia|virarhertz|tocarsomhertz|ordenarlistanumero|inverterlistanumero|pertencelistanumero|alterarlistanumero|ordenarlistatexto|inverterlistatexto|pertencelistatexto|alterarlistatexto|potencia|wait|add|subtract|multiply|divide|comment|clearConsole|concatenate|mod|minus|round|substitute|mapping|absolute|breakLoop|squareRoot|concatenate3|concatenate4|charPosition|convertToNumber|stringLength|turnLedOn|turnRgbLedOn|turnLedOff|addNumberList|removeNumberList|numberList|numberListSize|printNumberList|addStringList|removeStringList|stringList|stringListSize|printStringList|truncate|concatenate5|random|resetStopwatch|sine|cosine|tangent|arcsine|arccosine|arctangent|pi|clearLine|adjustColor|setPrecision|playNote|playSound|changeSoundWave|stopSound|stopAllSounds|convertToFrequency|convertToHertz|playSoundHertz|sortNumberList|reverseNumberList|containsNumberList|setNumberList|sortStringList|reverseStringList|containsStringList|setStringList|pow)\\b"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.sboticsR"
+}

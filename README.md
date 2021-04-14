@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">sBotics Snippets</h1>
-<p align="center">Snippets with <a href="https://weduc.natalnet.br/sbotics">sBotics</a> language support for VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README_pt_BR.md">pt_BR version</a></p>
+<p align="center">Snippets with <a href="https://sbotics.weduc.natalnet.br">sBotics</a> language support for VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README_pt_BR.md"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/> Versão em PT_BR <img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/></a></p>
 
 <h4 align="center">🚧 Under construction 🚧</h4>
 
@@ -16,28 +16,19 @@
 </p>
 
 ## Features
-  - [x] Snippets for rEduc in Brazilian Portuguese
-    - [x] Commands
-    - [x] Parameters
-      - [x] Types
-  - [x] Snippets for rEduc in English
-    - [x] Commands
-    - [x] Parameters
-      - [x] Types
-  - [x] Snippets for C#
-    - [x] Commands
-    - [x] Parameters
-      - [x] Types
-  - [x] Automatic update of snippets
+  - Snippets for rEduc in Brazilian Portuguese
+  - Snippets for rEduc in English
+  - Snippets for C#
+  - Automatic update of snippets
+  - Theme support!
 
 ## Demonstration
-Below is a gif of the power of snippets, demonstrated in C # (sBoticsC)
-> Note: The command shown does not exist!
+Below is a gif of the power of snippets, demonstrated in rEduc_ptBR (sBoticsR)
 
-![Demo](https://i.imgur.com/I0ltwwd.gif)
+![Demo](https://i.imgur.com/HsIsYKG.gif)
 
 ## Installation
-### Via VS Code
+### Via VS Code Marketplace
 The installation by VS Code is done by the marketplace, and can be performed directly within it by the following steps:
   - Open the VS Code
   - Open the `Extensions` tab
@@ -50,6 +41,15 @@ The installation by GitHub is done by the [releases](https://github.com/gabrield
   - Access the [releases](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases)
   - Download the `vsix` file in the [latest release](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases/latest)
   - Install on VS Code with this file
+
+  > Press `F1` and type something like `vsix`, this option will appear and just select the location of the file
+
+  ![installation](https://i.imgur.com/K9Y7Dsw.gif)
+
+  When this notification appears you will know that everything went well, then just click on `Reload`!
+
+  ![completed_installation](https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instalacao-vsix.png?raw=true)
+
 
 ## Contribution
 These are the current contributors to the project, who helped create it from scratch!
@@ -70,7 +70,7 @@ These are the current contributors to the project, who helped create it from scr
           </td>
           <td>
               <a href="https://github.com/jvneto">
-                  <img width="100%" src="https://avatars.githubusercontent.com/u/60150667?v=4">
+                  <img width="90%" src="https://avatars.githubusercontent.com/u/60150667?v=4">
               </a>
           </td>
           <td>
@@ -91,6 +91,6 @@ All types of contributions are very welcome and appreciated!
   - Share!
 
 ## **sBotics simulator**
-<a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/instagram.png?raw=true"/></a>
-<a href="https://bit.ly/sboticsdiscord"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/discord.png?raw=true"/></a>
-<a href="https://weduc.natalnet.br/sbotics/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>
+<a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instagram.png?raw=true"/></a>
+<a href="https://discord.gg/PubzWWjzuz"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/discord.png?raw=true"/></a>
+<a href="https://sbotics.weduc.natalnet.br/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>

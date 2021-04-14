@@ -1,153 +1,153 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "sboticsC",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		},
-		{
-			"include": "#template"
-		},
-		{
-			"include": "#movimentacao"
-		},
-		{
-			"include": "#sensores"
-		},
-		{
-			"include": "#variaveis"
-		},
-		{
-			"include": "#true"
-		},
-		{
-			"include": "#false"
-		},
-		{
-			"include": "#escrever"
-		},
-		{
-			"include": "#condicionais"
-		},
-		{
-			"include": "#funcoes"
-		},
-		{
-			"include": "#sinais"
-		},
-		{
-			"include": "#ledbuzzer"
-		},
-		{
-			"include": "#bool"
-		},
-		{
-			"include": "#Comment"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [
-				{
-					"name": "keyword.control.sboticsC",
-					"match": "\\b(if|else|while|do|for|to|switch|case|default|return|goto|foreach|in)\\b"
-				}
-			]
-		},
-		"template": {
-			"patterns": [
-				{
-					"name": "template.control.sboticsC",
-					"match": "\\b(Action|Func|Thread|Start|Join|Abort|IsAlive)\\b"
-				}
-			]
-		},
-		"movimentacao": {
-			"patterns": [
-				{
-					"name": "movimentacao.control.sboticsC",
-					"match": "\\b(moverTempo|onTF|onTFRot|onTFRotations|onTFRight|onTFLeft|frente|tras|esquerda|direita|abrir|baixar|fechar|girarbaixo|girarcima|levantar|mover|motoresquerda|motordireita|frenterotacao|trasrotacao|rotacionar|actuatorDown|actuatorUp|turnActuatorUp|turnActuatorDown|RE|closeActuator|openActuator|turnFanOn)\\b"
-				}
-			]
-		},
-		"sensores": {
-			"patterns": [
-				{
-					"name": "sensores.control.sboticsC",
-					"match": "\\b(direcao|luz|lightness|cor|returnColor|ultra|distance|temalgo|detectDistance|toque|touch|getonTFLeft|getonTFRight|inclination|returnGreen|returnBlue|returnRed|compass|hasVictims|heat|Fita|inclinacao)\\b"
-				}
-			]
-		},
-		"condicionais": {
-			"patterns": [
-				{
-					"name": "condicionais.control.sboticsC",
-					"match": "\\b(wait|map|Abs|DivRem|millis|timer|resetTimer|randomLimits|angleBucket|angleActuator|colorSens|PI|ordenarlistanumero|toFrequency|toHertz|actuatorSpeed|delay|changeWave|changePencilColor|setPrecision|intervalo|ajustarDecimais)\\b"
-				}
-			]
-		},
-		"variaveis": {
-			"patterns": [
-				{
-					"name": "variaveis.control.sboticsC",
-					"match": "\\b(bool|byte|sbyte|float|short|ushort|int|uint|long|ulong|double|decimal|char|string)\\b"
-				}
-			]
-		},
-		"bool": {
-			"patterns": [
-				{
-					"name": "bool.control.sboticsC",
-					"match": "\\b(true|false)\\b"
-				}
-			]
-		},
-		"false": {
-			"patterns": [
-				{
-					"name": "false.control.sboticsC",
-					"match": "\\b(break|stop|clearLCD|stopSavingLCD|eraseLCDFile|clearLCDLine|stopSound|removeNumberList|removeTextList|stopSound|turnLedOff|turnFanOff|stopPainting)\\b"
-				}
-			]
-		},
-		"escrever": {
-			"patterns": [
-				{
-					"name": "escrever.control.sboticsC",
-					"match": "\\b(printLCD|ToString|saveLCD|writeText|writeNumber|booleanToString|writeBoolean|register)\\b"
-				}
-			]
-		},
-		"funcoes": {
-			"patterns": [
-				{
-					"name": "funcoes.control.sboticsC",
-					"match": "\\b(bc|Bussola|Pista|Calibrar|Centralizar|Desacelerar|Acelerar|Rampa|VerdeRGB|Preto90|Seguidor|SeguidorVerde|Verde|Obstaculo|Levantar|Abaixar|LevantarAtuador|AbaixarAtuador|SeguidorRampa|LevantarVitima|Parede|Triangulo|Resgate|Buscar|SeguidorGyro|Despachar|BuscarTriangulo|CentralizarGyro|Debug|Musica|AyrtonSenna|ChegouNaBase|DireitaBuscar|EsquerdaBuscar|VitimaMeio|SegundaBusca|DetectaVitima|IrTriangulo|DebugCurva|Terminate)\\b"
-				}
-			]
-		},
-		"ledbuzzer": {
-			"patterns": [
-				{
-					"name": "ledbuzzer.control.sboticsC",
-					"match": "\\b(turnLedOn|playSound|playNote|paint|playSoundHertz)\\b"
-				}
-			]
-		},
-		"strings": {
-			"name": "string.quoted.double.sboticsC",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.sboticsC",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.sboticsC"
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "sboticsC",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#template"
+    },
+    {
+      "include": "#movimentacao"
+    },
+    {
+      "include": "#sensores"
+    },
+    {
+      "include": "#variaveis"
+    },
+    {
+      "include": "#true"
+    },
+    {
+      "include": "#false"
+    },
+    {
+      "include": "#escrever"
+    },
+    {
+      "include": "#condicionais"
+    },
+    {
+      "include": "#funcoes"
+    },
+    {
+      "include": "#sinais"
+    },
+    {
+      "include": "#ledbuzzer"
+    },
+    {
+      "include": "#bool"
+    },
+    {
+      "include": "#Comment"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.sboticsC",
+          "match": "\\b(if|else|while|do|for|to|switch|case|default|return|goto|foreach|in)\\b"
+        }
+      ]
+    },
+    "template": {
+      "patterns": [
+        {
+          "name": "template.control.sboticsC",
+          "match": "\\b(Action|Func|Thread|Start|Join|Abort|IsAlive)\\b"
+        }
+      ]
+    },
+    "movimentacao": {
+      "patterns": [
+        {
+          "name": "movimentacao.control.sboticsC",
+          "match": "\\b(moverTempo|onTF|onTFRot|onTFRotations|onTFRight|onTFLeft|frente|tras|esquerda|direita|abrir|baixar|fechar|girarbaixo|girarcima|levantar|mover|motoresquerda|motordireita|frenterotacao|trasrotacao|rotacionar|actuatorDown|actuatorUp|turnActuatorUp|turnActuatorDown|RE|closeActuator|openActuator|turnFanOn)\\b"
+        }
+      ]
+    },
+    "sensores": {
+      "patterns": [
+        {
+          "name": "sensores.control.sboticsC",
+          "match": "\\b(direcao|luz|lightness|cor|returnColor|ultra|distance|temalgo|detectDistance|toque|touch|getonTFLeft|getonTFRight|inclination|returnGreen|returnBlue|returnRed|compass|hasVictims|heat|Fita|inclinacao)\\b"
+        }
+      ]
+    },
+    "condicionais": {
+      "patterns": [
+        {
+          "name": "condicionais.control.sboticsC",
+          "match": "\\b(wait|map|Abs|DivRem|millis|timer|resetTimer|randomLimits|angleBucket|angleActuator|colorSens|PI|ordenarlistanumero|toFrequency|toHertz|actuatorSpeed|delay|changeWave|changePencilColor|setPrecision|intervalo|ajustarDecimais)\\b"
+        }
+      ]
+    },
+    "variaveis": {
+      "patterns": [
+        {
+          "name": "variaveis.control.sboticsC",
+          "match": "\\b(bool|byte|sbyte|float|short|ushort|int|uint|long|ulong|double|decimal|char|string)\\b"
+        }
+      ]
+    },
+    "bool": {
+      "patterns": [
+        {
+          "name": "bool.control.sboticsC",
+          "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "false": {
+      "patterns": [
+        {
+          "name": "false.control.sboticsC",
+          "match": "\\b(break|stop|clearLCD|stopSavingLCD|eraseLCDFile|clearLCDLine|stopSound|removeNumberList|removeTextList|stopSound|turnLedOff|turnFanOff|stopPainting)\\b"
+        }
+      ]
+    },
+    "escrever": {
+      "patterns": [
+        {
+          "name": "escrever.control.sboticsC",
+          "match": "\\b(printLCD|ToString|saveLCD|writeText|writeNumber|booleanToString|writeBoolean|register)\\b"
+        }
+      ]
+    },
+    "funcoes": {
+      "patterns": [
+        {
+          "name": "funcoes.control.sboticsC",
+          "match": "\\b(bc|Bussola|Pista|Calibrar|Centralizar|Desacelerar|Acelerar|Rampa|VerdeRGB|Preto90|Seguidor|SeguidorVerde|Verde|Obstaculo|Levantar|Abaixar|LevantarAtuador|AbaixarAtuador|SeguidorRampa|LevantarVitima|Parede|Triangulo|Resgate|Buscar|SeguidorGyro|Despachar|BuscarTriangulo|CentralizarGyro|Debug|Musica|AyrtonSenna|ChegouNaBase|DireitaBuscar|EsquerdaBuscar|VitimaMeio|SegundaBusca|DetectaVitima|IrTriangulo|DebugCurva|Terminate)\\b"
+        }
+      ]
+    },
+    "ledbuzzer": {
+      "patterns": [
+        {
+          "name": "ledbuzzer.control.sboticsC",
+          "match": "\\b(turnLedOn|playSound|playNote|paint|playSoundHertz)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.sboticsC",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.sboticsC",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.sboticsC"
 }
