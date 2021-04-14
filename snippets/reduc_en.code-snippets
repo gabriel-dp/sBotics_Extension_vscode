@@ -391,8 +391,15 @@
      "for": {
           "prefix": "?for",
           "body": [
-               "para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\n}"
+               "for ${1:x} of ${2:min} to ${3:max} step ${4:1} do {\n\n}"
           ],
           "description": "Loop that executes commands for a predetermined number of times. (for)"
+     },
+     "begin": {
+          "prefix": "?begin",
+          "body": [
+               "begin\n\n\n\nend"
+          ],
+          "description": "Basic structure of a script in rEduc."
      }
 }

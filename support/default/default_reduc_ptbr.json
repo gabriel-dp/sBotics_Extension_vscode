@@ -40,5 +40,12 @@
                "para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\n}"
           ],
           "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada. (for)"
+     },
+     "inicio": {
+          "prefix": "?inicio",
+          "body": [
+               "inicio\n\n\n\nfim"
+          ],
+          "description": "Estrutura básica para um código em rEduc."
      }
 }
