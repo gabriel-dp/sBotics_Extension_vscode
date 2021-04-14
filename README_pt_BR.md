@@ -5,7 +5,7 @@
 </p>
 <h1 align="center">sBotics Snippets</h1>
 
-<p align="center">Snippets com suporte às lingugens do <a href="https://sbotics.weduc.natalnet.br">sBotics</a> para VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README.md"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"/>Versão em inglês<img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"/></a></p>
+<p align="center">Snippets com suporte às lingugens do <a href="https://sbotics.weduc.natalnet.br">sBotics</a> para VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README.md"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"/> English version <img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"/></a></p>
 
 
 <h4 align="center">🚧 Em construção 🚧</h4>
