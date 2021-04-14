@@ -31,7 +31,7 @@ Abaixo tem um gif do poder dos snippets, demonstrado em C# (sBoticsC)
 ![Demo](https://i.imgur.com/I0ltwwd.gif)
 
 ## Instalação
-### Via VS Code
+### Via VS Code Marketplace
 A instalação pelo VS Code é feita pelo marketplace, e pode ser realizada diretamente dentro dele pelos seguintes passos:
   - Abra o VS Code
   - Abra a aba `Extensões`
@@ -44,6 +44,14 @@ A instalação pelo GitHub é feita pelos [releases](https://github.com/gabrield
   - Acesse as [releases](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases)
   - Faça o download do arquivo `vsix` na [release mais recente](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases/latest)
   - Instale no VS Code com esse arquivo
+
+  > Aperte `F1` e escreva algo como `vsix`, essa opção vai aparecer e basta selecionar o local do arquivo
+
+  ![instalacao](https://i.imgur.com/K9Y7Dsw.gif)
+
+  Quando essa notificação aparecer você saberá que deu tudo certo!
+
+  ![instalacao_completa](https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instalacao-vsix.png?raw=true)
 
 ## Contribuição
 Esses são os atuais contribuintes do projeto, que ajudaram a criar ele do zero!
@@ -64,7 +72,7 @@ Esses são os atuais contribuintes do projeto, que ajudaram a criar ele do zero!
           </td>
           <td>
               <a href="https://github.com/jvneto">
-                  <img width="100%" src="https://avatars.githubusercontent.com/u/60150667?v=4">
+                  <img width="90%" src="https://avatars.githubusercontent.com/u/60150667?v=4">
               </a>
           </td>
           <td>
@@ -85,6 +93,6 @@ Todos os tipos de contribuição são muito bem vindos e apreciados!
   - Compartilhar!
 
 ## **Simulador sBotics**
-<a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/instagram.png?raw=true"/></a>
-<a href="https://bit.ly/sboticsdiscord"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/discord.png?raw=true"/></a>
+<a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instagram.png?raw=true"/></a>
+<a href="https://bit.ly/sboticsdiscord"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/discord.png?raw=true"/></a>
 <a href="https://sbotics.weduc.natalnet.br/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>
