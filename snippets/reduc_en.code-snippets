@@ -1,398 +1,646 @@
 {
-                "wait": {
-                    "prefix": "wait",
-                    "body": ["wait(${1:Time[int]})",],"description":"Waits for a time in miliseconds before proceeding. The values have to be integers greater than 0. "},
-                "ultra": {
-                    "prefix": "ultra",
-                    "body": ["ultra(${1:Sensor[int]})",],"description":"Returns a number with the distance perceived by the referenced (1st parameter) ultrasonic sensor. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
-                "compass": {
-                    "prefix": "compass",
-                    "body": ["compass()",],"description":"Returns the angle of the robot in relation to the north (geographically). "},
-                "hasObject": {
-                    "prefix": "hasObject",
-                    "body": ["hasObject(${1:Sensor[int]}, ${2:Minimum[int]}, ${3:Maximum[int]})",],"description":"Returns if the referenced ultrasonic sensor (1st parameter) is detecting something between the minimum (2nd parameter) and maximum (3rd parameter) distances. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "},
-                "forward": {
-                    "prefix": "forward",
-                    "body": ["forward(${1:Force[int]})",],"description":"Applies a force (1st parameter) to the robot's wheels to push itself forward.  (The force is limited from -300 to 300) "},
-                "backwards": {
-                    "prefix": "backwards",
-                    "body": ["backwards(${1:Force[int]})",],"description":"Applies a force (1st parameter) to the robot's wheels to push itself backwards.  (The force is limited from -300 to 300) "},
-                "right": {
-                    "prefix": "right",
-                    "body": ["right(${1:Force[int]})",],"description":"Applies a force (1st parameter) to the robot's wheels to rotate right on its axis.  (The force is limited from -1000 to 1000) "},
-                "left": {
-                    "prefix": "left",
-                    "body": ["left(${1:Force[int]})",],"description":"Applies a force (1st parameter) to the robot's wheels to rotate left on its axis.  (The force is limited from -1000 to 1000) "},
-                "move": {
-                    "prefix": "move",
-                    "body": ["move(${1:Force[int]}, ${2:Force[int]})",],"description":"Moves the robot in different directions depending on the applied forces (1st parameter for the left-hand-side motors and 2nd parameter for the right-hand-side ones). The forces can vary from -300 to 300 if both forces are equal or -1000 to 1000 if they're not. "},
-                "stop": {
-                    "prefix": "stop",
-                    "body": ["stop()",],"description":"Stops any forces being applied to the robot's wheel motors. "},
-                "color": {
-                    "prefix": "color",
-                    "body": ["color(${1:Sensor[int]})",],"description":"Returns the color percieved by the referenced (1st parameter) sensor. Colors can either be: “RED”, “GREEN”, “BLUE”, “YELLOW”, “CYAN”, “MAGENTA”, “BLACK” and “WHITE”. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
-                "light": {
-                    "prefix": "light",
-                    "body": ["light(${1:Sensor[int]})",],"description":"Returns the light value percieved by the referenced (1st parameter) sensor. Light values vary from a scale of 0 to 100. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "},
-                "write": {
-                    "prefix": "write",
-                    "body": ["write(${1:Console Line[int]}, ${2:String[String]})",],"description":"Writes on the specified line on the console (1st parameter) the string on the 2nd parameter. The console has 3 lines. "},
-                "convertToString": {
-                    "prefix": "convertToString",
-                    "body": ["convertToString(${1:Number[int]})",],"description":"Converts a given number to a string. "},
-                "open": {
-                    "prefix": "open",
-                    "body": ["open(${1:Milliseconds Time[int]})",],"description":"Opens the claw/scoop of the Forklift actuator for the time specified (1st parameter). "},
-                "close": {
-                    "prefix": "close",
-                    "body": ["close(${1:Milliseconds Time[int]})",],"description":"Closes the claw/scoop of the Forklift actuator for the time specified (1st parameter). "},
-                "raise": {
-                    "prefix": "raise",
-                    "body": ["raise(${1:Milliseconds Time[int]})",],"description":"Raises the claw/scoop of the actuator for the time specified (1st parameter). "},
-                "lower": {
-                    "prefix": "lower",
-                    "body": ["lower(${1:Milliseconds Time[int]})",],"description":"Lowers the claw/scoop of the actuator for the time specified (1st parameter). "},
-                "turnUp": {
-                    "prefix": "turnUp",
-                    "body": ["turnUp(${1:Milliseconds Time[int]})",],"description":"Turns the claw/scoop of the actuator up for the time specified (1st parameter). "},
-                "turnDown": {
-                    "prefix": "turnDown",
-                    "body": ["turnDown(${1:Milliseconds Time[int]})",],"description":"Turns the claw/scoop of the actuator down for the time specified (1st parameter). "},
-                "writeNumber": {
-                    "prefix": "writeNumber",
-                    "body": ["writeNumber(${1:Console Line[int]}, ${2:String[String]})",],"description":"Prints a number (2nd parameter) on the specified (1st parameter) line of the virtual console. The console has 3 lines. "},
-                "add": {
-                    "prefix": "add",
-                    "body": ["add(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Adds the two specified numbers. Or you can use the + symbol directly. "},
-                "subtract": {
-                    "prefix": "subtract",
-                    "body": ["subtract(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Subtracts the two specified numbers. Or you can use the - symbol directly. "},
-                "multiply": {
-                    "prefix": "multiply",
-                    "body": ["multiply(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Multiplies the two specified numbers. Or you can use the * symbol directly "},
-                "divide": {
-                    "prefix": "divide",
-                    "body": ["divide(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Divides the two specified numbers. Or you can use the / symbol directly. "},
-                "comment": {
-                    "prefix": "comment",
-                    "body": ["comment(${1:Comment[String]})",],"description":"Comments your code. Or you can use the # symbol directly. "},
-                "clearConsole": {
-                    "prefix": "clearConsole",
-                    "body": ["clearConsole()",],"description":"Clears all text being shown on the console. "},
-                "concatenate": {
-                    "prefix": "concatenate",
-                    "body": ["concatenate(${1:String A[String]}, ${2:String B[String]})",],"description":"Concatenates two strings. "},
-                "mod": {
-                    "prefix": "mod",
-                    "body": ["mod(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Returns the remainder of the division of the two indicated numbers. "},
-                "minus": {
-                    "prefix": "minus",
-                    "body": ["minus(${1:Number[int]})",],"description":"Converts the given number (1st parameter) to its negative counterpart. You can also use 0-number for the same effect. "},
-                "round": {
-                    "prefix": "round",
-                    "body": ["round(${1:Number[int]})",],"description":"Rounds the indicated number. "},
-                "substitute": {
-                    "prefix": "substitute",
-                    "body": ["substitute(${1:Parameter A[String]}, ${2:Parameter B[String]}, ${3:Parameter C[String]})",],"description":"Receive a string and replace a string of characters indicated with the one provided. "},
-                "time": {
-                    "prefix": "time",
-                    "body": ["time()",],"description":"Returns the time in milliseconds that has elapsed since the execution of the routine. "},
-                "mapping": {
-                    "prefix": "mapping",
-                    "body": ["mapping(${1:Parameter A[int]}, ${2:Minimum Home Scale[int]}, ${3:Maximum Start Scale[int]}, ${4:Minimum Final Scale[int]}, ${5:Maximum Final Scale[int]})",],"description":"Maps a number from one range to another. "},
-                "absolute": {
-                    "prefix": "absolute",
-                    "body": ["absolute(${1:Parameter[int]})",],"description":"Returns the module of the indicated number. "},
-                "breakLoop": {
-                    "prefix": "breakLoop",
-                    "body": ["breakLoop()",],"description":"Stops the execution of the inner loop of repetition (while - do, do - while, repeat and for) more internal. NOTE: if used outside a repetition loop, the simulator will report an error. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
-                "greenColor": {
-                    "prefix": "greenColor",
-                    "body": ["greenColor(${1:Sensor[int]})",],"description":"Returns the intensity of the green color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
-                "blueColor": {
-                    "prefix": "blueColor",
-                    "body": ["blueColor(${1:Sensor[int]})",],"description":"Returns the intensity of the blue color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
-                "redColor": {
-                    "prefix": "redColor",
-                    "body": ["redColor(${1:Sensor[int]})",],"description":"Returns the intensity of the red color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
-                "rotate": {
-                    "prefix": "rotate",
-                    "body": ["rotate(${1:Force[int]}, ${2:Angle[int]})",],"description":"Apply a force to the robot's wheels so that it rotates a certain angle, positive or negative, from its current direction around the axis. (Force limit: 0 to 500) "},
-                "touch": {
-                    "prefix": "touch",
-                    "body": ["touch(${1:Sensor[int]})",],"description":"Returns the state of the specified (1st parameter) touch sensor. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "},
-                "actuatorAngle": {
-                    "prefix": "actuatorAngle",
-                    "body": ["actuatorAngle()",],"description":"Returns the number corresponding to the angle of inclination of the robot actuator in relation to the plane. "},
-                "actuatorVelocity": {
-                    "prefix": "actuatorVelocity",
-                    "body": ["actuatorVelocity(${1:Force[int]})",],"description":"Modifies the force applied to the Movement of the actuators.  (Force limit: 0 a 150) "},
-                "squareRoot": {
-                    "prefix": "squareRoot",
-                    "body": ["squareRoot(${1:Number[int]})",],"description":"Returns the number corresponding to the square root of the indicated number. "},
-                "concatenate3": {
-                    "prefix": "concatenate3",
-                    "body": ["concatenate3(${1:String A[String]}, ${2:String B[String]}, ${3:String C[String]})",],"description":"Concatenates(joins) three strings into one. "},
-                "concatenate4": {
-                    "prefix": "concatenate4",
-                    "body": ["concatenate4(${1:[String]}, ${2:String A[String]}, ${3:String B[String]}, ${4:String C[String]}, ${5:String D[String]})",],"description":"Concatenates(joins) four strings into one. "},
-                "charPosition": {
-                    "prefix": "charPosition",
-                    "body": ["charPosition(${1:Position[int]}, ${2:String[String]})",],"description":"Returns a string with the character that is in the indicated position of the string provided. "},
-                "convertToNumber": {
-                    "prefix": "convertToNumber",
-                    "body": ["convertToNumber(${1:número[String]})",],"description":"Converts string to number. "},
-                "stringLength": {
-                    "prefix": "stringLength",
-                    "body": ["stringLength(${1:String[String]})",],"description":"Returns the number of characters in the indicated string. "},
-                "turnLedOn": {
-                    "prefix": "turnLedOn",
-                    "body": ["turnLedOn(${1:Color[String]})",],"description":"Turns the RGB LED light in of these colors: “RED”, “GREEN”, “BLUE”, “YELLOW”, “CYAN”, “MAGENTA”, “BLACK” and “WHITE”.  "},
-                "turnRgbLedOn": {
-                    "prefix": "turnRgbLedOn",
-                    "body": ["turnRgbLedOn(${1:Red[int]}, ${2:Verde[int]}, ${3:Blue[int]})",],"description":"Turn on the led in the specified color from an RGB code. Parameter 1 corresponds to R, parameter 2 to G and parameter 3 to B. The received RGB values ​​can range from 0 to 255. "},
-                "turnLedOff": {
-                    "prefix": "turnLedOff",
-                    "body": ["turnLedOff()",],"description":"Turn off the led. "},
-                "addNumberList": {
-                    "prefix": "addNumberList",
-                    "body": ["addNumberList(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Insert in the indicated list(Parameter 1) the specified number(Parameter 2). Lists are created automatically when you insert numbers into them. "},
-                "removeNumberList": {
-                    "prefix": "removeNumberList",
-                    "body": ["removeNumberList(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Remove from list(Parameter 1) the number present in the indicated position(Parameter 2).  "},
-                "numberList": {
-                    "prefix": "numberList",
-                    "body": ["numberList(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Returns the number present in the list(Parameter 1) and in the specified position(Parameter 2). If the list does not have any elements in the specified position, the return will be 0. "},
-                "numberListSize": {
-                    "prefix": "numberListSize",
-                    "body": ["numberListSize(${1:List Number[int]})",],"description":"Returns the number of elements in the indicated list.  "},
-                "printNumberList": {
-                    "prefix": "printNumberList",
-                    "body": ["printNumberList(${1:List Number[int]})",],"description":"Returns a string with the elements of the indicated list separated by |.  "},
-                "addStringList": {
-                    "prefix": "addStringList",
-                    "body": ["addStringList(${1:Parameter A[int]}, ${2:Parameter B[String]})",],"description":"Insert in the indicated list(Parameter 1) the specified string(Parameter 2).  Lists are created automatically when you insert string into them. "},
-                "removeStringList": {
-                    "prefix": "removeStringList",
-                    "body": ["removeStringList(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Remove from list(Parameter 1) the string present in the indicated position(Parameter 2).  "},
-                "stringList": {
-                    "prefix": "stringList",
-                    "body": ["stringList(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Returns the string in the list(Parameter 1) and in the specified position(Parameter 2). If the list does not have any elements in the specified position, the return will be . "},
-                "stringListSize": {
-                    "prefix": "stringListSize",
-                    "body": ["stringListSize(${1:List Number[int]})",],"description":"Returns the number of elements in the indicated list.  "},
-                "printStringList": {
-                    "prefix": "printStringList",
-                    "body": ["printStringList(${1:List Number[int]})",],"description":"Returns a string with the elements of the indicated list separated by |.  "},
-                "truncate": {
-                    "prefix": "truncate",
-                    "body": ["truncate(${1:Parameter[int]})",],"description":"Returns the entire part of the given number. "},
-                "concatenate5": {
-                    "prefix": "concatenate5",
-                    "body": ["concatenate5(${1:Parameter A[String]}, ${2:Parameter B[String]}, ${3:Parameter C[String]}, ${4:Parameter D[String]}, ${5:Parameter E[String]})",],"description":"Concatenates(joins) five strings into one. "},
-                "forwardRotation": {
-                    "prefix": "forwardRotation",
-                    "body": ["forwardRotation(${1:Force[int]}, ${2:Rotations[int]})",],"description":"Moves the robot forward with the force indicated by the number of revolutions provided. (Force limit: 300) "},
-                "backwardsRotation": {
-                    "prefix": "backwardsRotation",
-                    "body": ["backwardsRotation(${1:Force[int]}, ${2:Rotations[int]})",],"description":"Moves the robot backwards with the force indicated by the number of revolutions provided. (Force limit: 300) "},
-                "register": {
-                    "prefix": "register",
-                    "body": ["register()",],"description":"Turns the write-console-to-text-file feature on. "},
-                "stopRegister": {
-                    "prefix": "stopRegister",
-                    "body": ["stopRegister()",],"description":"Turns the write-console-to-text-file feature off. "},
-                "clearRegister": {
-                    "prefix": "clearRegister",
-                    "body": ["clearRegister()",],"description":"Clears all content inside the consoleLog.txt file found on the installation folder  "},
-                "random": {
-                    "prefix": "random",
-                    "body": ["random(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Returns a random number between the given integers. "},
-                "stopwatch": {
-                    "prefix": "stopwatch",
-                    "body": ["stopwatch()",],"description":"Returns the time in milliseconds that has elapsed since the execution of the routine or since the last command resetStopwatch(). "},
-                "resetStopwatch": {
-                    "prefix": "resetStopwatch",
-                    "body": ["resetStopwatch()",],"description":"Reset the elapsed time on the timer and start a new countdown. "},
-                "sine": {
-                    "prefix": "sine",
-                    "body": ["sine(${1:Degrees[int]})",],"description":"Returns the sine of the angle reported in degrees. "},
-                "cosine": {
-                    "prefix": "cosine",
-                    "body": ["cosine(${1:Degrees[int]})",],"description":"Returns the cosine of the angle reported in degrees. "},
-                "tangent": {
-                    "prefix": "tangent",
-                    "body": ["tangent(${1:Degrees[int]})",],"description":"Returns the tangent of the angle inserted in degrees. "},
-                "arcsine": {
-                    "prefix": "arcsine",
-                    "body": ["arcsine(${1:Degrees[int]})",],"description":"Returns the arc whose sine is equal to the inserted value.  "},
-                "arccosine": {
-                    "prefix": "arccosine",
-                    "body": ["arccosine(${1:Degrees[int]})",],"description":"Returns the arc whose cosine is equal to the inserted value.  "},
-                "arctangent": {
-                    "prefix": "arctangent",
-                    "body": ["arctangent(${1:Degrees[int]})",],"description":"Returns the arc whose tangent is equal to the inserted value.  "},
-                "pi": {
-                    "prefix": "pi",
-                    "body": ["pi()",],"description":"Returns the value of PI. "},
-                "clearLine": {
-                    "prefix": "clearLine",
-                    "body": ["clearLine(${1:Console Line[int]})",],"description":"Clears all text in one of the three lines of the console. "},
-                "registerString": {
-                    "prefix": "registerString",
-                    "body": ["registerString(${1:String[String]})",],"description":"Registers a string to a text file called consoleLog.txt found on the installation folder. "},
-                "registerNumber": {
-                    "prefix": "registerNumber",
-                    "body": ["registerNumber(${1:Number[int]})",],"description":"Registers a number to a text file called consoleLog.txt found on the installation folder. "},
-                "rightMotor": {
-                    "prefix": "rightMotor",
-                    "body": ["rightMotor(${1:Force[int]})",],"description":"Applies the given force to the right motor.  (The force is limited from -300 to 300) "},
-                "leftMotor": {
-                    "prefix": "leftMotor",
-                    "body": ["leftMotor(${1:Force[int]})",],"description":"Applies the given force to the left motor.  (The force is limited from -300 to 300) "},
-                "adjustColor": {
-                    "prefix": "adjustColor",
-                    "body": ["adjustColor(${1:Sensitivity[int]})",],"description":"Adjusts the default sensibility for the color function/sensor. The sensibility value has to be a number from 0 to 100. The default sensibility is 25. "},
-                "actuatorScoopAngle": {
-                    "prefix": "actuatorScoopAngle",
-                    "body": ["actuatorScoopAngle()",],"description":"Returns the angle of the actuator scoop in relation to the arena. "},
-                "setPrecision": {
-                    "prefix": "setPrecision",
-                    "body": ["setPrecision(${1:Precision[int]})",],"description":"Adjusts the quantity of decimal places to be processed by the simulator to the specified value. "},
-                "playNote": {
-                    "prefix": "playNote",
-                    "body": ["playNote(${1:Speaker[int]}, ${2:Musical Note[String]}, ${3:Milliseconds Time[int]})",],"description":"Plays a musical note (2nd parameter) on the specified (1st parameter) buzzer speaker for a specified time period in miliseconds (3rd parameter). Valid musical notes: do, re, mi, fa, sol, la, ti, A, B, C, D, E, F, G. "},
-                "playSound": {
-                    "prefix": "playSound",
-                    "body": ["playSound(${1:Speaker[int]}, ${2:Frequency[int]}, ${3:Milliseconds Time[int]}, ${4:Wave Type[String]})",],"description":"Plays on the specified (1st parameter) buzzer speaker a specific sBotics frequency (2nd parameter) for a specified time period in miliseconds (3rd parameter) with a specific wave format (4th parameter). Wave formats are: SQUARE, SAWTOOTH, NOISE, MUTE. "},
-                "changeSoundWave": {
-                    "prefix": "changeSoundWave",
-                    "body": ["changeSoundWave(${1:Wave Type[String]})",],"description":"Adjusts the wave format that the play function will have."},
-                "stopSound": {
-                    "prefix": "stopSound",
-                    "body": ["stopSound(${1:Speaker[int]})",],"description":"Stops the execution of the specified (1st parameter) buzzer speaker. "},
-                "stopAllSounds": {
-                    "prefix": "stopAllSounds",
-                    "body": ["stopAllSounds()",],"description":"Stops all sounds being played by all buzzer speakers. "},
-                "convertToFrequency": {
-                    "prefix": "convertToFrequency",
-                    "body": ["convertToFrequency(${1:Frequency in Hertz[int]})",],"description":"Converts a given Hertz frequency to the unit of frequency of the simulator. "},
-                "convertToHertz": {
-                    "prefix": "convertToHertz",
-                    "body": ["convertToHertz(${1:Frequency na Unidade do Simulador[int]})",],"description":"Converts a given sBotics frequency to Hertz. "},
-                "playSoundHertz": {
-                    "prefix": "playSoundHertz",
-                    "body": ["playSoundHertz(${1:Speaker[int]}, ${2:Frequency[int]}, ${3:Milliseconds Time[int]}, ${4:Wave Type[String]})",],"description":"Plays on the specified (1st parameter) buzzer speaker a specific HERTZ frequency (2nd parameter) for a specified time period in miliseconds (3rd parameter) with a specific wave format (4th parameter). Wave formats are: SQUARE, SAWTOOTH, NOISE, MUTE. "},
-                "sortNumberList": {
-                    "prefix": "sortNumberList",
-                    "body": ["sortNumberList(${1:List Number[int]})",],"description":"Sorts, in increasing order, the elements of the given list. "},
-                "reverseNumberList": {
-                    "prefix": "reverseNumberList",
-                    "body": ["reverseNumberList(${1:List Number[int]})",],"description":"Reverses the order of the specified list. "},
-                "containsNumberList": {
-                    "prefix": "containsNumberList",
-                    "body": ["containsNumberList(${1:List Number[int]}, ${2:Parameter[int]})",],"description":"Checks wether or not the list contains the specified number. "},
-                "setNumberList": {
-                    "prefix": "setNumberList",
-                    "body": ["setNumberList(${1:List Number[int]}, ${2:Position in List[int]}, ${3:Parameter[int]})",],"description":"Sets a specific position (2nd parameter) of the specified list (1st paramete) to a number (3rd parameter). "},
-                "sortStringList": {
-                    "prefix": "sortStringList",
-                    "body": ["sortStringList(${1:List Number[int]})",],"description":"Orders alphabetically the specified list. "},
-                "reverseStringList": {
-                    "prefix": "reverseStringList",
-                    "body": ["reverseStringList(${1:List Number[int]})",],"description":"Reverses the order of the specified list. "},
-                "containsStringList": {
-                    "prefix": "containsStringList",
-                    "body": ["containsStringList(${1:List Number[int]}, ${2:Parameter[int]})",],"description":"Checks whether a specific element belongs to the indicated list. "},
-                "setStringList": {
-                    "prefix": "setStringList",
-                    "body": ["setStringList(${1:List Number[int]}, ${2:Position in List[int]}, ${3:Parameter[String]})",],"description":"Sets a specific position (2nd parameter) of the specified list (1st paramete) to a string (3rd parameter). "},
-                "rightMotorSpeed": {
-                    "prefix": "rightMotorSpeed",
-                    "body": ["rightMotorSpeed()",],"description":"Returns the right motor speed. "},
-                "leftMotorSpeed": {
-                    "prefix": "leftMotorSpeed",
-                    "body": ["leftMotorSpeed()",],"description":"Returns the left motor speed. "},
-                "writeBoolean": {
-                    "prefix": "writeBoolean",
-                    "body": ["writeBoolean(${1:Console Line[int]}, ${2:Parameter[boolean]})",],"description":"Prints a boolean on the specified (1st parameter) line of the virtual console. The console has 3 lines. "},
-                "registerBoolean": {
-                    "prefix": "registerBoolean",
-                    "body": ["registerBoolean(${1:Parameter[boolean]})",],"description":"Registers a boolean to a text file called consoleLog.txt found on the installation folder. "},
-                "pow": {
-                    "prefix": "pow",
-                    "body": ["pow(${1:Base[int]}, ${2:Exponent[int]})",],"description":"Returns the corresponding number to the power of the 2nd parameter. "},
-                "paint": {
-                    "prefix": "paint",
-                    "body": ["paint()",],"description":"Enables the pencil for painting.  "},
-                "stopPainting": {
-                    "prefix": "stopPainting",
-                    "body": ["stopPainting()",],"description":"Retracts the pencil interrupting the painting. "},
-                "pencilColor": {
-                    "prefix": "pencilColor",
-                    "body": ["pencilColor(${1:Color[String]})",],"description":"Changes the color of the pencil to one of the these colors: “RED”, “GREEN”, “BLUE”, “YELLOW”, “CYAN”, “MAGENTA”, “BLACK” and “WHITE”. "},
-                "pencilRgbColor": {
-                    "prefix": "pencilRgbColor",
-                    "body": ["pencilRgbColor(${1:Red[int]}, ${2:Verde[int]}, ${3:Blue[int]})",],"description":"Changes the color of the pencil to a specific RGB color. "},
-                "turnFanOn": {
-                    "prefix": "turnFanOn",
-                    "body": ["turnFanOn()",],"description":"Turns the fan actuator on. "},
-                "turnFanOff": {
-                    "prefix": "turnFanOff",
-                    "body": ["turnFanOff()",],"description":"Turns the fan actuator off. "},
-                "temperature": {
-                    "prefix": "temperature",
-                    "body": ["temperature()",],"description":"Returns the temperature perceived by the temperature sensor of the robot. "},
-                "hasAnyVictim": {
-                    "prefix": "hasAnyVictim",
-                    "body": ["hasAnyVictim()",],"description":"Returns true if there is one or more victims inside the actuator. "},
-                "motorSpeed": {
-                    "prefix": "motorSpeed",
-                    "body": ["motorSpeed()",],"description":"Returns the speed of rotation of the motors.  "},
-                "inclination": {
-                    "prefix": "inclination",
-                    "body": ["inclination()",],"description":"Returns the angle of inclnation of the robot in relation to the arena. "},
-     "if": {
-          "prefix": "?if",
-          "body": [
-               "if (${1:condition}) then {\n\n}"
-          ],
-          "description": "Structure that executes commands only if the defined condition is true. (if)"
-     },
-     "ifelse": {
-          "prefix": "?ifelse",
-          "body": [
-               "if (${1:condition}) then {\n\n} else {\n\n}"
-          ],
-          "description": "Structure that evaluates the condition and executes the 'if' commands if it is true and the 'else' if it is false. (if | else)"
-     },
-     "ifelseif": {
-          "prefix": "?ifelseif",
-          "body": [
-               "if (${1:condition}) then {\n\n} else if (${1:condition}) then {\n\n} "
-          ],
-          "description": "Structure that makes possible to verify another 'if' condition, if the first one is false. (if | else if)"
-     },
-     "while": {
-          "prefix": "?while",
-          "body": [
-               "while (${1:condition}) do {\n\n}"
-          ],
-          "description": "Loop that executes the commands until the condition be false (while)"
-     },
-     "do": {
-          "prefix": "?do",
-          "body": [
-               "do {\n\n} while (${1:condition})"
-          ],
-          "description": "Loop that executes the commands before checking the condition, until be false. (do while)"
-     },
-     "for": {
-          "prefix": "?for",
-          "body": [
-               "para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\n}"
-          ],
-          "description": "Loop that executes commands for a predetermined number of times. (for)"
-     }
+  "wait": {
+    "prefix": "wait",
+    "body": ["wait(${1:Time[int]})"],
+    "description": "Waits for a time in miliseconds before proceeding. The values have to be integers greater than 0. "
+  },
+  "ultra": {
+    "prefix": "ultra",
+    "body": ["ultra(${1:Sensor[int]})"],
+    "description": "Returns a number with the distance perceived by the referenced (1st parameter) ultrasonic sensor. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "
+  },
+  "compass": {
+    "prefix": "compass",
+    "body": ["compass()"],
+    "description": "Returns the angle of the robot in relation to the north (geographically). "
+  },
+  "hasObject": {
+    "prefix": "hasObject",
+    "body": [
+      "hasObject(${1:Sensor[int]}, ${2:Minimum[int]}, ${3:Maximum[int]})"
+    ],
+    "description": "Returns if the referenced ultrasonic sensor (1st parameter) is detecting something between the minimum (2nd parameter) and maximum (3rd parameter) distances. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "
+  },
+  "forward": {
+    "prefix": "forward",
+    "body": ["forward(${1:Force[int]})"],
+    "description": "Applies a force (1st parameter) to the robot's wheels to push itself forward.  (The force is limited from -300 to 300) "
+  },
+  "backwards": {
+    "prefix": "backwards",
+    "body": ["backwards(${1:Force[int]})"],
+    "description": "Applies a force (1st parameter) to the robot's wheels to push itself backwards.  (The force is limited from -300 to 300) "
+  },
+  "right": {
+    "prefix": "right",
+    "body": ["right(${1:Force[int]})"],
+    "description": "Applies a force (1st parameter) to the robot's wheels to rotate right on its axis.  (The force is limited from -1000 to 1000) "
+  },
+  "left": {
+    "prefix": "left",
+    "body": ["left(${1:Force[int]})"],
+    "description": "Applies a force (1st parameter) to the robot's wheels to rotate left on its axis.  (The force is limited from -1000 to 1000) "
+  },
+  "move": {
+    "prefix": "move",
+    "body": ["move(${1:Force[int]}, ${2:Force[int]})"],
+    "description": "Moves the robot in different directions depending on the applied forces (1st parameter for the left-hand-side motors and 2nd parameter for the right-hand-side ones). The forces can vary from -300 to 300 if both forces are equal or -1000 to 1000 if they're not. "
+  },
+  "stop": {
+    "prefix": "stop",
+    "body": ["stop()"],
+    "description": "Stops any forces being applied to the robot's wheel motors. "
+  },
+  "color": {
+    "prefix": "color",
+    "body": ["color(${1:Sensor[int]})"],
+    "description": "Returns the color percieved by the referenced (1st parameter) sensor. Colors can either be: “RED”, “GREEN”, “BLUE”, “YELLOW”, “CYAN”, “MAGENTA”, “BLACK” and “WHITE”. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "
+  },
+  "light": {
+    "prefix": "light",
+    "body": ["light(${1:Sensor[int]})"],
+    "description": "Returns the light value percieved by the referenced (1st parameter) sensor. Light values vary from a scale of 0 to 100. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "
+  },
+  "write": {
+    "prefix": "write",
+    "body": ["write(${1:Console Line[int]}, ${2:String[String]})"],
+    "description": "Writes on the specified line on the console (1st parameter) the string on the 2nd parameter. The console has 3 lines. "
+  },
+  "convertToString": {
+    "prefix": "convertToString",
+    "body": ["convertToString(${1:Number[int]})"],
+    "description": "Converts a given number to a string. "
+  },
+  "open": {
+    "prefix": "open",
+    "body": ["open(${1:Milliseconds Time[int]})"],
+    "description": "Opens the claw/scoop of the Forklift actuator for the time specified (1st parameter). "
+  },
+  "close": {
+    "prefix": "close",
+    "body": ["close(${1:Milliseconds Time[int]})"],
+    "description": "Closes the claw/scoop of the Forklift actuator for the time specified (1st parameter). "
+  },
+  "raise": {
+    "prefix": "raise",
+    "body": ["raise(${1:Milliseconds Time[int]})"],
+    "description": "Raises the claw/scoop of the actuator for the time specified (1st parameter). "
+  },
+  "lower": {
+    "prefix": "lower",
+    "body": ["lower(${1:Milliseconds Time[int]})"],
+    "description": "Lowers the claw/scoop of the actuator for the time specified (1st parameter). "
+  },
+  "turnUp": {
+    "prefix": "turnUp",
+    "body": ["turnUp(${1:Milliseconds Time[int]})"],
+    "description": "Turns the claw/scoop of the actuator up for the time specified (1st parameter). "
+  },
+  "turnDown": {
+    "prefix": "turnDown",
+    "body": ["turnDown(${1:Milliseconds Time[int]})"],
+    "description": "Turns the claw/scoop of the actuator down for the time specified (1st parameter). "
+  },
+  "writeNumber": {
+    "prefix": "writeNumber",
+    "body": ["writeNumber(${1:Console Line[int]}, ${2:String[String]})"],
+    "description": "Prints a number (2nd parameter) on the specified (1st parameter) line of the virtual console. The console has 3 lines. "
+  },
+  "add": {
+    "prefix": "add",
+    "body": ["add(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Adds the two specified numbers. Or you can use the + symbol directly. "
+  },
+  "subtract": {
+    "prefix": "subtract",
+    "body": ["subtract(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Subtracts the two specified numbers. Or you can use the - symbol directly. "
+  },
+  "multiply": {
+    "prefix": "multiply",
+    "body": ["multiply(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Multiplies the two specified numbers. Or you can use the * symbol directly "
+  },
+  "divide": {
+    "prefix": "divide",
+    "body": ["divide(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Divides the two specified numbers. Or you can use the / symbol directly. "
+  },
+  "comment": {
+    "prefix": "comment",
+    "body": ["comment(${1:Comment[String]})"],
+    "description": "Comments your code. Or you can use the # symbol directly. "
+  },
+  "clearConsole": {
+    "prefix": "clearConsole",
+    "body": ["clearConsole()"],
+    "description": "Clears all text being shown on the console. "
+  },
+  "concatenate": {
+    "prefix": "concatenate",
+    "body": ["concatenate(${1:String A[String]}, ${2:String B[String]})"],
+    "description": "Concatenates two strings. "
+  },
+  "mod": {
+    "prefix": "mod",
+    "body": ["mod(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Returns the remainder of the division of the two indicated numbers. "
+  },
+  "minus": {
+    "prefix": "minus",
+    "body": ["minus(${1:Number[int]})"],
+    "description": "Converts the given number (1st parameter) to its negative counterpart. You can also use 0-number for the same effect. "
+  },
+  "round": {
+    "prefix": "round",
+    "body": ["round(${1:Number[int]})"],
+    "description": "Rounds the indicated number. "
+  },
+  "substitute": {
+    "prefix": "substitute",
+    "body": [
+      "substitute(${1:Parameter A[String]}, ${2:Parameter B[String]}, ${3:Parameter C[String]})"
+    ],
+    "description": "Receive a string and replace a string of characters indicated with the one provided. "
+  },
+  "time": {
+    "prefix": "time",
+    "body": ["time()"],
+    "description": "Returns the time in milliseconds that has elapsed since the execution of the routine. "
+  },
+  "mapping": {
+    "prefix": "mapping",
+    "body": [
+      "mapping(${1:Parameter A[int]}, ${2:Minimum Home Scale[int]}, ${3:Maximum Start Scale[int]}, ${4:Minimum Final Scale[int]}, ${5:Maximum Final Scale[int]})"
+    ],
+    "description": "Maps a number from one range to another. "
+  },
+  "absolute": {
+    "prefix": "absolute",
+    "body": ["absolute(${1:Parameter[int]})"],
+    "description": "Returns the module of the indicated number. "
+  },
+  "breakLoop": {
+    "prefix": "breakLoop",
+    "body": ["breakLoop()"],
+    "description": "Stops the execution of the inner loop of repetition (while - do, do - while, repeat and for) more internal. NOTE: if used outside a repetition loop, the simulator will report an error. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "
+  },
+  "greenColor": {
+    "prefix": "greenColor",
+    "body": ["greenColor(${1:Sensor[int]})"],
+    "description": "Returns the intensity of the green color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "
+  },
+  "blueColor": {
+    "prefix": "blueColor",
+    "body": ["blueColor(${1:Sensor[int]})"],
+    "description": "Returns the intensity of the blue color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "
+  },
+  "redColor": {
+    "prefix": "redColor",
+    "body": ["redColor(${1:Sensor[int]})"],
+    "description": "Returns the intensity of the red color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "
+  },
+  "rotate": {
+    "prefix": "rotate",
+    "body": ["rotate(${1:Force[int]}, ${2:Angle[int]})"],
+    "description": "Apply a force to the robot's wheels so that it rotates a certain angle, positive or negative, from its current direction around the axis. (Force limit: 0 to 500) "
+  },
+  "touch": {
+    "prefix": "touch",
+    "body": ["touch(${1:Sensor[int]})"],
+    "description": "Returns the state of the specified (1st parameter) touch sensor. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "
+  },
+  "actuatorAngle": {
+    "prefix": "actuatorAngle",
+    "body": ["actuatorAngle()"],
+    "description": "Returns the number corresponding to the angle of inclination of the robot actuator in relation to the plane. "
+  },
+  "actuatorVelocity": {
+    "prefix": "actuatorVelocity",
+    "body": ["actuatorVelocity(${1:Force[int]})"],
+    "description": "Modifies the force applied to the Movement of the actuators.  (Force limit: 0 a 150) "
+  },
+  "squareRoot": {
+    "prefix": "squareRoot",
+    "body": ["squareRoot(${1:Number[int]})"],
+    "description": "Returns the number corresponding to the square root of the indicated number. "
+  },
+  "concatenate3": {
+    "prefix": "concatenate3",
+    "body": [
+      "concatenate3(${1:String A[String]}, ${2:String B[String]}, ${3:String C[String]})"
+    ],
+    "description": "Concatenates(joins) three strings into one. "
+  },
+  "concatenate4": {
+    "prefix": "concatenate4",
+    "body": [
+      "concatenate4(${1:[String]}, ${2:String A[String]}, ${3:String B[String]}, ${4:String C[String]}, ${5:String D[String]})"
+    ],
+    "description": "Concatenates(joins) four strings into one. "
+  },
+  "charPosition": {
+    "prefix": "charPosition",
+    "body": ["charPosition(${1:Position[int]}, ${2:String[String]})"],
+    "description": "Returns a string with the character that is in the indicated position of the string provided. "
+  },
+  "convertToNumber": {
+    "prefix": "convertToNumber",
+    "body": ["convertToNumber(${1:número[String]})"],
+    "description": "Converts string to number. "
+  },
+  "stringLength": {
+    "prefix": "stringLength",
+    "body": ["stringLength(${1:String[String]})"],
+    "description": "Returns the number of characters in the indicated string. "
+  },
+  "turnLedOn": {
+    "prefix": "turnLedOn",
+    "body": ["turnLedOn(${1:Color[String]})"],
+    "description": "Turns the RGB LED light in of these colors: “RED”, “GREEN”, “BLUE”, “YELLOW”, “CYAN”, “MAGENTA”, “BLACK” and “WHITE”.  "
+  },
+  "turnRgbLedOn": {
+    "prefix": "turnRgbLedOn",
+    "body": ["turnRgbLedOn(${1:Red[int]}, ${2:Verde[int]}, ${3:Blue[int]})"],
+    "description": "Turn on the led in the specified color from an RGB code. Parameter 1 corresponds to R, parameter 2 to G and parameter 3 to B. The received RGB values ​​can range from 0 to 255. "
+  },
+  "turnLedOff": {
+    "prefix": "turnLedOff",
+    "body": ["turnLedOff()"],
+    "description": "Turn off the led. "
+  },
+  "addNumberList": {
+    "prefix": "addNumberList",
+    "body": ["addNumberList(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Insert in the indicated list(Parameter 1) the specified number(Parameter 2). Lists are created automatically when you insert numbers into them. "
+  },
+  "removeNumberList": {
+    "prefix": "removeNumberList",
+    "body": ["removeNumberList(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Remove from list(Parameter 1) the number present in the indicated position(Parameter 2).  "
+  },
+  "numberList": {
+    "prefix": "numberList",
+    "body": ["numberList(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Returns the number present in the list(Parameter 1) and in the specified position(Parameter 2). If the list does not have any elements in the specified position, the return will be 0. "
+  },
+  "numberListSize": {
+    "prefix": "numberListSize",
+    "body": ["numberListSize(${1:List Number[int]})"],
+    "description": "Returns the number of elements in the indicated list.  "
+  },
+  "printNumberList": {
+    "prefix": "printNumberList",
+    "body": ["printNumberList(${1:List Number[int]})"],
+    "description": "Returns a string with the elements of the indicated list separated by |.  "
+  },
+  "addStringList": {
+    "prefix": "addStringList",
+    "body": ["addStringList(${1:Parameter A[int]}, ${2:Parameter B[String]})"],
+    "description": "Insert in the indicated list(Parameter 1) the specified string(Parameter 2).  Lists are created automatically when you insert string into them. "
+  },
+  "removeStringList": {
+    "prefix": "removeStringList",
+    "body": ["removeStringList(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Remove from list(Parameter 1) the string present in the indicated position(Parameter 2).  "
+  },
+  "stringList": {
+    "prefix": "stringList",
+    "body": ["stringList(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Returns the string in the list(Parameter 1) and in the specified position(Parameter 2). If the list does not have any elements in the specified position, the return will be . "
+  },
+  "stringListSize": {
+    "prefix": "stringListSize",
+    "body": ["stringListSize(${1:List Number[int]})"],
+    "description": "Returns the number of elements in the indicated list.  "
+  },
+  "printStringList": {
+    "prefix": "printStringList",
+    "body": ["printStringList(${1:List Number[int]})"],
+    "description": "Returns a string with the elements of the indicated list separated by |.  "
+  },
+  "truncate": {
+    "prefix": "truncate",
+    "body": ["truncate(${1:Parameter[int]})"],
+    "description": "Returns the entire part of the given number. "
+  },
+  "concatenate5": {
+    "prefix": "concatenate5",
+    "body": [
+      "concatenate5(${1:Parameter A[String]}, ${2:Parameter B[String]}, ${3:Parameter C[String]}, ${4:Parameter D[String]}, ${5:Parameter E[String]})"
+    ],
+    "description": "Concatenates(joins) five strings into one. "
+  },
+  "forwardRotation": {
+    "prefix": "forwardRotation",
+    "body": ["forwardRotation(${1:Force[int]}, ${2:Rotations[int]})"],
+    "description": "Moves the robot forward with the force indicated by the number of revolutions provided. (Force limit: 300) "
+  },
+  "backwardsRotation": {
+    "prefix": "backwardsRotation",
+    "body": ["backwardsRotation(${1:Force[int]}, ${2:Rotations[int]})"],
+    "description": "Moves the robot backwards with the force indicated by the number of revolutions provided. (Force limit: 300) "
+  },
+  "register": {
+    "prefix": "register",
+    "body": ["register()"],
+    "description": "Turns the write-console-to-text-file feature on. "
+  },
+  "stopRegister": {
+    "prefix": "stopRegister",
+    "body": ["stopRegister()"],
+    "description": "Turns the write-console-to-text-file feature off. "
+  },
+  "clearRegister": {
+    "prefix": "clearRegister",
+    "body": ["clearRegister()"],
+    "description": "Clears all content inside the consoleLog.txt file found on the installation folder  "
+  },
+  "random": {
+    "prefix": "random",
+    "body": ["random(${1:Parameter A[int]}, ${2:Parameter B[int]})"],
+    "description": "Returns a random number between the given integers. "
+  },
+  "stopwatch": {
+    "prefix": "stopwatch",
+    "body": ["stopwatch()"],
+    "description": "Returns the time in milliseconds that has elapsed since the execution of the routine or since the last command resetStopwatch(). "
+  },
+  "resetStopwatch": {
+    "prefix": "resetStopwatch",
+    "body": ["resetStopwatch()"],
+    "description": "Reset the elapsed time on the timer and start a new countdown. "
+  },
+  "sine": {
+    "prefix": "sine",
+    "body": ["sine(${1:Degrees[int]})"],
+    "description": "Returns the sine of the angle reported in degrees. "
+  },
+  "cosine": {
+    "prefix": "cosine",
+    "body": ["cosine(${1:Degrees[int]})"],
+    "description": "Returns the cosine of the angle reported in degrees. "
+  },
+  "tangent": {
+    "prefix": "tangent",
+    "body": ["tangent(${1:Degrees[int]})"],
+    "description": "Returns the tangent of the angle inserted in degrees. "
+  },
+  "arcsine": {
+    "prefix": "arcsine",
+    "body": ["arcsine(${1:Degrees[int]})"],
+    "description": "Returns the arc whose sine is equal to the inserted value.  "
+  },
+  "arccosine": {
+    "prefix": "arccosine",
+    "body": ["arccosine(${1:Degrees[int]})"],
+    "description": "Returns the arc whose cosine is equal to the inserted value.  "
+  },
+  "arctangent": {
+    "prefix": "arctangent",
+    "body": ["arctangent(${1:Degrees[int]})"],
+    "description": "Returns the arc whose tangent is equal to the inserted value.  "
+  },
+  "pi": {
+    "prefix": "pi",
+    "body": ["pi()"],
+    "description": "Returns the value of PI. "
+  },
+  "clearLine": {
+    "prefix": "clearLine",
+    "body": ["clearLine(${1:Console Line[int]})"],
+    "description": "Clears all text in one of the three lines of the console. "
+  },
+  "registerString": {
+    "prefix": "registerString",
+    "body": ["registerString(${1:String[String]})"],
+    "description": "Registers a string to a text file called consoleLog.txt found on the installation folder. "
+  },
+  "registerNumber": {
+    "prefix": "registerNumber",
+    "body": ["registerNumber(${1:Number[int]})"],
+    "description": "Registers a number to a text file called consoleLog.txt found on the installation folder. "
+  },
+  "rightMotor": {
+    "prefix": "rightMotor",
+    "body": ["rightMotor(${1:Force[int]})"],
+    "description": "Applies the given force to the right motor.  (The force is limited from -300 to 300) "
+  },
+  "leftMotor": {
+    "prefix": "leftMotor",
+    "body": ["leftMotor(${1:Force[int]})"],
+    "description": "Applies the given force to the left motor.  (The force is limited from -300 to 300) "
+  },
+  "adjustColor": {
+    "prefix": "adjustColor",
+    "body": ["adjustColor(${1:Sensitivity[int]})"],
+    "description": "Adjusts the default sensibility for the color function/sensor. The sensibility value has to be a number from 0 to 100. The default sensibility is 25. "
+  },
+  "actuatorScoopAngle": {
+    "prefix": "actuatorScoopAngle",
+    "body": ["actuatorScoopAngle()"],
+    "description": "Returns the angle of the actuator scoop in relation to the arena. "
+  },
+  "setPrecision": {
+    "prefix": "setPrecision",
+    "body": ["setPrecision(${1:Precision[int]})"],
+    "description": "Adjusts the quantity of decimal places to be processed by the simulator to the specified value. "
+  },
+  "playNote": {
+    "prefix": "playNote",
+    "body": [
+      "playNote(${1:Speaker[int]}, ${2:Musical Note[String]}, ${3:Milliseconds Time[int]})"
+    ],
+    "description": "Plays a musical note (2nd parameter) on the specified (1st parameter) buzzer speaker for a specified time period in miliseconds (3rd parameter). Valid musical notes: do, re, mi, fa, sol, la, ti, A, B, C, D, E, F, G. "
+  },
+  "playSound": {
+    "prefix": "playSound",
+    "body": [
+      "playSound(${1:Speaker[int]}, ${2:Frequency[int]}, ${3:Milliseconds Time[int]}, ${4:Wave Type[String]})"
+    ],
+    "description": "Plays on the specified (1st parameter) buzzer speaker a specific sBotics frequency (2nd parameter) for a specified time period in miliseconds (3rd parameter) with a specific wave format (4th parameter). Wave formats are: SQUARE, SAWTOOTH, NOISE, MUTE. "
+  },
+  "changeSoundWave": {
+    "prefix": "changeSoundWave",
+    "body": ["changeSoundWave(${1:Wave Type[String]})"],
+    "description": "Adjusts the wave format that the play function will have."
+  },
+  "stopSound": {
+    "prefix": "stopSound",
+    "body": ["stopSound(${1:Speaker[int]})"],
+    "description": "Stops the execution of the specified (1st parameter) buzzer speaker. "
+  },
+  "stopAllSounds": {
+    "prefix": "stopAllSounds",
+    "body": ["stopAllSounds()"],
+    "description": "Stops all sounds being played by all buzzer speakers. "
+  },
+  "convertToFrequency": {
+    "prefix": "convertToFrequency",
+    "body": ["convertToFrequency(${1:Frequency in Hertz[int]})"],
+    "description": "Converts a given Hertz frequency to the unit of frequency of the simulator. "
+  },
+  "convertToHertz": {
+    "prefix": "convertToHertz",
+    "body": ["convertToHertz(${1:Frequency na Unidade do Simulador[int]})"],
+    "description": "Converts a given sBotics frequency to Hertz. "
+  },
+  "playSoundHertz": {
+    "prefix": "playSoundHertz",
+    "body": [
+      "playSoundHertz(${1:Speaker[int]}, ${2:Frequency[int]}, ${3:Milliseconds Time[int]}, ${4:Wave Type[String]})"
+    ],
+    "description": "Plays on the specified (1st parameter) buzzer speaker a specific HERTZ frequency (2nd parameter) for a specified time period in miliseconds (3rd parameter) with a specific wave format (4th parameter). Wave formats are: SQUARE, SAWTOOTH, NOISE, MUTE. "
+  },
+  "sortNumberList": {
+    "prefix": "sortNumberList",
+    "body": ["sortNumberList(${1:List Number[int]})"],
+    "description": "Sorts, in increasing order, the elements of the given list. "
+  },
+  "reverseNumberList": {
+    "prefix": "reverseNumberList",
+    "body": ["reverseNumberList(${1:List Number[int]})"],
+    "description": "Reverses the order of the specified list. "
+  },
+  "containsNumberList": {
+    "prefix": "containsNumberList",
+    "body": ["containsNumberList(${1:List Number[int]}, ${2:Parameter[int]})"],
+    "description": "Checks wether or not the list contains the specified number. "
+  },
+  "setNumberList": {
+    "prefix": "setNumberList",
+    "body": [
+      "setNumberList(${1:List Number[int]}, ${2:Position in List[int]}, ${3:Parameter[int]})"
+    ],
+    "description": "Sets a specific position (2nd parameter) of the specified list (1st paramete) to a number (3rd parameter). "
+  },
+  "sortStringList": {
+    "prefix": "sortStringList",
+    "body": ["sortStringList(${1:List Number[int]})"],
+    "description": "Orders alphabetically the specified list. "
+  },
+  "reverseStringList": {
+    "prefix": "reverseStringList",
+    "body": ["reverseStringList(${1:List Number[int]})"],
+    "description": "Reverses the order of the specified list. "
+  },
+  "containsStringList": {
+    "prefix": "containsStringList",
+    "body": ["containsStringList(${1:List Number[int]}, ${2:Parameter[int]})"],
+    "description": "Checks whether a specific element belongs to the indicated list. "
+  },
+  "setStringList": {
+    "prefix": "setStringList",
+    "body": [
+      "setStringList(${1:List Number[int]}, ${2:Position in List[int]}, ${3:Parameter[String]})"
+    ],
+    "description": "Sets a specific position (2nd parameter) of the specified list (1st paramete) to a string (3rd parameter). "
+  },
+  "rightMotorSpeed": {
+    "prefix": "rightMotorSpeed",
+    "body": ["rightMotorSpeed()"],
+    "description": "Returns the right motor speed. "
+  },
+  "leftMotorSpeed": {
+    "prefix": "leftMotorSpeed",
+    "body": ["leftMotorSpeed()"],
+    "description": "Returns the left motor speed. "
+  },
+  "writeBoolean": {
+    "prefix": "writeBoolean",
+    "body": ["writeBoolean(${1:Console Line[int]}, ${2:Parameter[boolean]})"],
+    "description": "Prints a boolean on the specified (1st parameter) line of the virtual console. The console has 3 lines. "
+  },
+  "registerBoolean": {
+    "prefix": "registerBoolean",
+    "body": ["registerBoolean(${1:Parameter[boolean]})"],
+    "description": "Registers a boolean to a text file called consoleLog.txt found on the installation folder. "
+  },
+  "pow": {
+    "prefix": "pow",
+    "body": ["pow(${1:Base[int]}, ${2:Exponent[int]})"],
+    "description": "Returns the corresponding number to the power of the 2nd parameter. "
+  },
+  "paint": {
+    "prefix": "paint",
+    "body": ["paint()"],
+    "description": "Enables the pencil for painting.  "
+  },
+  "stopPainting": {
+    "prefix": "stopPainting",
+    "body": ["stopPainting()"],
+    "description": "Retracts the pencil interrupting the painting. "
+  },
+  "pencilColor": {
+    "prefix": "pencilColor",
+    "body": ["pencilColor(${1:Color[String]})"],
+    "description": "Changes the color of the pencil to one of the these colors: “RED”, “GREEN”, “BLUE”, “YELLOW”, “CYAN”, “MAGENTA”, “BLACK” and “WHITE”. "
+  },
+  "pencilRgbColor": {
+    "prefix": "pencilRgbColor",
+    "body": ["pencilRgbColor(${1:Red[int]}, ${2:Verde[int]}, ${3:Blue[int]})"],
+    "description": "Changes the color of the pencil to a specific RGB color. "
+  },
+  "turnFanOn": {
+    "prefix": "turnFanOn",
+    "body": ["turnFanOn()"],
+    "description": "Turns the fan actuator on. "
+  },
+  "turnFanOff": {
+    "prefix": "turnFanOff",
+    "body": ["turnFanOff()"],
+    "description": "Turns the fan actuator off. "
+  },
+  "temperature": {
+    "prefix": "temperature",
+    "body": ["temperature()"],
+    "description": "Returns the temperature perceived by the temperature sensor of the robot. "
+  },
+  "hasAnyVictim": {
+    "prefix": "hasAnyVictim",
+    "body": ["hasAnyVictim()"],
+    "description": "Returns true if there is one or more victims inside the actuator. "
+  },
+  "motorSpeed": {
+    "prefix": "motorSpeed",
+    "body": ["motorSpeed()"],
+    "description": "Returns the speed of rotation of the motors.  "
+  },
+  "inclination": {
+    "prefix": "inclination",
+    "body": ["inclination()"],
+    "description": "Returns the angle of inclnation of the robot in relation to the arena. "
+  },
+  "if": {
+    "prefix": "?if",
+    "body": ["if (${1:condition}) then {\n\n}"],
+    "description": "Structure that executes commands only if the defined condition is true. (if)"
+  },
+  "ifelse": {
+    "prefix": "?ifelse",
+    "body": ["if (${1:condition}) then {\n\n} else {\n\n}"],
+    "description": "Structure that evaluates the condition and executes the 'if' commands if it is true and the 'else' if it is false. (if | else)"
+  },
+  "ifelseif": {
+    "prefix": "?ifelseif",
+    "body": [
+      "if (${1:condition}) then {\n\n} else if (${1:condition}) then {\n\n} "
+    ],
+    "description": "Structure that makes possible to verify another 'if' condition, if the first one is false. (if | else if)"
+  },
+  "while": {
+    "prefix": "?while",
+    "body": ["while (${1:condition}) do {\n\n}"],
+    "description": "Loop that executes the commands until the condition be false (while)"
+  },
+  "do": {
+    "prefix": "?do",
+    "body": ["do {\n\n} while (${1:condition})"],
+    "description": "Loop that executes the commands before checking the condition, until be false. (do while)"
+  },
+  "for": {
+    "prefix": "?for",
+    "body": ["para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\n}"],
+    "description": "Loop that executes commands for a predetermined number of times. (for)"
+  }
 }
