@@ -25,10 +25,9 @@
   - Suporte para temas!
 
 ## Demonstração
-Abaixo tem um gif do poder dos snippets, demonstrado em C# (sBoticsC)
-> Obs: O comando demonstrado não existe!
+Abaixo tem um gif do poder dos snippets, demonstrado em rEduc_ptBR (sBoticsR)
 
-![Demo](https://i.imgur.com/I0ltwwd.gif)
+![Demo](https://i.imgur.com/HsIsYKG.gif)
 
 ## Instalação
 ### Via VS Code Marketplace
@@ -49,7 +48,7 @@ A instalação pelo GitHub é feita pelos [releases](https://github.com/gabrield
 
   ![instalacao](https://i.imgur.com/K9Y7Dsw.gif)
 
-  Quando essa notificação aparecer você saberá que deu tudo certo!
+  Quando essa notificação aparecer você saberá que deu tudo certo, aí basta clicar em `Reload`!
 
   ![instalacao_completa](https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instalacao-vsix.png?raw=true)
 
@@ -94,5 +93,5 @@ Todos os tipos de contribuição são muito bem vindos e apreciados!
 
 ## **Simulador sBotics**
 <a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instagram.png?raw=true"/></a>
-<a href="https://bit.ly/sboticsdiscord"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/discord.png?raw=true"/></a>
+<a href="https://discord.gg/PubzWWjzuz"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/discord.png?raw=true"/></a>
 <a href="https://sbotics.weduc.natalnet.br/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>
