@@ -2,6 +2,8 @@ const vscode = require("vscode");
 const axios = require("axios");
 const fsLibrary = require("fs");
 
+
+// Request to sBotics API
 const apiSnippets = async (nameLang) => {
     try {
         // @ts-ignore
@@ -25,6 +27,8 @@ const apiSnippets = async (nameLang) => {
     }
 };
 
+
+// Count how many languages rEduc and C# were declarated
 const langCount = (all) => {
     var R = 0;
     var C = 0;
@@ -36,6 +40,8 @@ const langCount = (all) => {
     return [R, C];
 };
 
+
+// Save the snippet file
 const saveSnippet = (nameLang, snippet) => {
     fsLibrary.writeFile(
         __dirname + "/snippets/" + nameLang + ".code-snippets",
@@ -48,11 +54,14 @@ const saveSnippet = (nameLang, snippet) => {
     );
 };
 
+
+
 var typeMove = [];
 var typeRead = [];
 var typeWrite = [];
 var typeOthers = [];
 
+// Divide the grammars by category before join all
 const jsonGrammars = (word, type) => {
     switch (type) {
         case "Movimentação":
@@ -73,6 +82,8 @@ const jsonGrammars = (word, type) => {
     }
 };
 
+
+// Create Grammars file
 const createGrammars = (sboticsLang, movement, read, write, others) => {
     var grammars = fsLibrary.readFileSync(
         __dirname + "/support/grammars/" + sboticsLang + ".tmLanguage.json",
@@ -122,10 +133,13 @@ const createGrammars = (sboticsLang, movement, read, write, others) => {
     );
 };
 
+
+
 var sboticsR = 0;
 var sboticsC = 0;
 var generateGrammar = false;
 
+// Convert the json file of API in a snippets file
 const jsonToSnippet = (nameLang, json, totalLangs) => {
     var actualLang = "";
 

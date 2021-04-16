@@ -4,6 +4,7 @@
 
 Extension for [sBotics Simulator](https://sbotics.weduc.natalnet.br) with support to rEduc and C# in brazilian portuguese and english. The snippets have a automatic update, you always will have the latest version of commands. Additionally, gives support to community themes (links at the end).
 
+
 <img src="https://i.imgur.com/HsIsYKG.gif" height="250" alt="A demonstation with Dracula-based theme" />
 
 ## **Usage**
@@ -14,6 +15,8 @@ Extension for [sBotics Simulator](https://sbotics.weduc.natalnet.br) with suppor
 
 <img src="https://i.imgur.com/BksVn0y.gif" height="300" alt="A demonstation with Dracula-based theme" />
 
+        To view suggestions type:
+            Ctrl+Space
 
 ## **Contribuitors**
 These are the main contributors to the project, who helped create it from scratch!

@@ -22,7 +22,7 @@
                     "body": ["bc.lightness(${1:Sensor[int]})",],"description":"Returns the light value percieved by the referenced (1st parameter) sensor. Light values vary from a scale of 0 to 100. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "},
                 "bc.printLCD": {
                     "prefix": "bc.printLCD",
-                    "body": ["bc.printLCD(${1:Console Line[int]}, ${2:Text[int]});",],"description":"Writes on the specified line on the console (1st parameter) the string on the 2nd parameter. The console has 3 lines. "},
+                    "body": ["bc.printLCD(${1:Console Line[int]}, ${2:Text[string]});",],"description":"Writes on the specified line on the console (1st parameter) the string on the 2nd parameter. The console has 3 lines. "},
                 "bc.openActuator": {
                     "prefix": "bc.openActuator",
                     "body": ["bc.openActuator();",],"description":"Opens the claw/scoop of the Forklift actuator for the time specified (1st parameter). "},
