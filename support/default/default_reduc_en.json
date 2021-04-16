@@ -1,87 +1,58 @@
 {
-<<<<<<< HEAD
      "if": {
           "prefix": "?if",
           "body": [
-               "if (${1:condition}) then {\n\n}"
+               "if (${1:condition}) then {\n\t\n}"
           ],
           "description": "Structure that executes commands only if the defined condition is true. (if)"
      },
      "ifelse": {
           "prefix": "?ifelse",
           "body": [
-               "if (${1:condition}) then {\n\n} else {\n\n}"
+               "if (${1:condition}) then {\n\t\n} else {\n\t\n}"
           ],
           "description": "Structure that evaluates the condition and executes the 'if' commands if it is true and the 'else' if it is false. (if | else)"
      },
      "ifelseif": {
           "prefix": "?ifelseif",
           "body": [
-               "if (${1:condition}) then {\n\n} else if (${1:condition}) then {\n\n} "
+               "if (${1:condition}) then {\n\t\n} else if (${1:condition}) then {\n\t\n} "
           ],
           "description": "Structure that makes possible to verify another 'if' condition, if the first one is false. (if | else if)"
      },
      "while": {
           "prefix": "?while",
           "body": [
-               "while (${1:condition}) do {\n\n}"
+               "while (${1:condition}) do {\n\t\n}"
           ],
           "description": "Loop that executes the commands until the condition be false (while)"
      },
      "do": {
           "prefix": "?do",
           "body": [
-               "do {\n\n} while (${1:condition})"
+               "do {\n\t\n} while (${1:condition})"
           ],
           "description": "Loop that executes the commands before checking the condition, until be false. (do while)"
      },
      "for": {
           "prefix": "?for",
           "body": [
-               "for ${1:x} of ${2:min} to ${3:max} step ${4:1} do {\n\n}"
+               "for ${1:x} of ${2:min} to ${3:max} step ${4:1} do {\n\t\n}"
           ],
           "description": "Loop that executes commands for a predetermined number of times. (for)"
      },
      "begin": {
           "prefix": "?begin",
           "body": [
-               "begin\n\n\n\nend"
+               "begin\n\t\t\n\t\t\n\t\t\nend"
           ],
           "description": "Basic structure of a script in rEduc."
+     },
+     "variable": {
+          "prefix": "?variable",
+          "body": [
+               "${1:type} ${2:name} = ${3:value}"
+          ],
+          "description": "Declaration of a variable. Possible types: number, string, boolean"
      }
 }
-=======
-  "if": {
-    "prefix": "?if",
-    "body": ["if (${1:condition}) then {\n\n}"],
-    "description": "Structure that executes commands only if the defined condition is true. (if)"
-  },
-  "ifelse": {
-    "prefix": "?ifelse",
-    "body": ["if (${1:condition}) then {\n\n} else {\n\n}"],
-    "description": "Structure that evaluates the condition and executes the 'if' commands if it is true and the 'else' if it is false. (if | else)"
-  },
-  "ifelseif": {
-    "prefix": "?ifelseif",
-    "body": [
-      "if (${1:condition}) then {\n\n} else if (${1:condition}) then {\n\n} "
-    ],
-    "description": "Structure that makes possible to verify another 'if' condition, if the first one is false. (if | else if)"
-  },
-  "while": {
-    "prefix": "?while",
-    "body": ["while (${1:condition}) do {\n\n}"],
-    "description": "Loop that executes the commands until the condition be false (while)"
-  },
-  "do": {
-    "prefix": "?do",
-    "body": ["do {\n\n} while (${1:condition})"],
-    "description": "Loop that executes the commands before checking the condition, until be false. (do while)"
-  },
-  "for": {
-    "prefix": "?for",
-    "body": ["para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\n}"],
-    "description": "Loop that executes commands for a predetermined number of times. (for)"
-  }
-}
->>>>>>> 906703d55bcb3b61cb99c278b24011cbaf957785

@@ -1,14 +1,14 @@
 {
-	"name": "sbotics-snippets",
-	"displayName": "sBotics Snippets",
-	"description": "Snippets to the sBotics simulator",
+	"name": "sbotics-extension",
+	"displayName": "sBotics",
+	"description": "Support and Snippets to rEduc and C#.",
 	"version": "1.0.0",
-	"publisher": "Gabrieldp-dev",
+	"publisher": "sbotics-simulator",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/gabrieldp23/sBotics_Snippets_vscode"
 	},
-	"license": "MIT License",
+	"license": "GNU License",
 	"icon": "assets/logo.png",
 	"engines": {
 		"vscode": "^1.46.0"
@@ -19,15 +19,21 @@
 	},
 	"categories": [
 		"Snippets",
-		"Programming Languages"
+		"Programming Languages",
+		"Other"
 	],
 	"keywords": [
 		"snippets",
+		"snippet",
+		"support",
+		"languages",
+		"C#",
 		"csharp",
+		"reduc",
+		"rEduc",
 		"sbotics",
 		"sBotics",
 		"sboticsC",
-		"reduc",
 		"sboticsR"
 	],
 	"activationEvents": [
@@ -37,43 +43,23 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "csharp-en",
-				"path": "./snippets/csharp_en.code-snippets"
-			},
-			{
-				"language": "csharp-ptbr",
-				"path": "./snippets/csharp_ptbr.code-snippets"
-			},
-			{
 				"language": "reduc-en",
 				"path": "./snippets/reduc_en.code-snippets"
 			},
 			{
 				"language": "reduc-ptbr",
 				"path": "./snippets/reduc_ptbr.code-snippets"
+			},
+			{
+				"language": "csharp-en",
+				"path": "./snippets/csharp_en.code-snippets"
+			},
+			{
+				"language": "csharp-ptbr",
+				"path": "./snippets/csharp_ptbr.code-snippets"
 			}
 		],
 		"languages": [
-			{
-				"id": "csharp-en",
-				"aliases": [
-					"csharpEN"
-				],
-				"extensions": [
-					".sboticsC"
-				],
-				"configuration": "./support/language-configuration.json"
-			},
-			{
-				"id": "csharp-ptbr",
-				"aliases": [
-					"csharpPTBR"
-				],
-				"extensions": [
-					".sboticsC"
-				],
-				"configuration": "./support/language-configuration.json"
-			},
 			{
 				"id": "reduc-en",
 				"aliases": [
@@ -93,18 +79,48 @@
 					".sboticsR"
 				],
 				"configuration": "./support/language-configuration.json"
+			},
+			{
+				"id": "csharp-en",
+				"aliases": [
+					"csharpEN"
+				],
+				"extensions": [
+					".sboticsC"
+				],
+				"configuration": "./support/language-configuration.json"
+			},
+			{
+				"id": "csharp-ptbr",
+				"aliases": [
+					"csharpPTBR"
+				],
+				"extensions": [
+					".sboticsC"
+				],
+				"configuration": "./support/language-configuration.json"
 			}
 		],
 		"grammars": [
+			{
+				"language": "reduc-en",
+				"scopeName": "source.sboticsR",
+				"path": "./support/grammars/sboticsR.tmLanguage.json"
+			},
 			{
 				"language": "reduc-ptbr",
 				"scopeName": "source.sboticsR",
 				"path": "./support/grammars/sboticsR.tmLanguage.json"
 			},
 			{
-				"language": "reduc-en",
-				"scopeName": "source.sboticsR",
-				"path": "./support/grammars/sboticsR.tmLanguage.json"
+				"language": "csharp-en",
+				"scopeName": "source.sboticsC",
+				"path": "./support/grammars/sboticsC.tmLanguage.json"
+			},
+			{
+				"language": "csharp-ptbr",
+				"scopeName": "source.sboticsC",
+				"path": "./support/grammars/sboticsC.tmLanguage.json"
 			}
 		]
 	},

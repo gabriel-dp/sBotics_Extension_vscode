@@ -1,0 +1,228 @@
+{
+                "bc.wait": {
+                    "prefix": "bc.wait",
+                    "body": ["bc.wait(${1:Tempo[numero]});",],"description":"Espera de um tempo em milissegundos antes de executar o próximo comando. Os valores devem ser sempre inteiros maiores que 0."},
+                "bc.distance": {
+                    "prefix": "bc.distance",
+                    "body": ["bc.distance(${1:Sensor[numero]})",],"description":"Retorna um valor do tipo número com a distância percebida pelo sensor de ultrassom informado por um número na função. A numeração dos sensores de ultrassom estão disponíveis na aba sensores do tutorial do simulador."},
+                "bc.compass": {
+                    "prefix": "bc.compass",
+                    "body": ["bc.compass()",],"description":"Retorna o ângulo do robô em relação ao norte geográfico. O retorno é um valor do tipo número."},
+                "bc.inclination": {
+                    "prefix": "bc.inclination",
+                    "body": ["bc.inclination()",],"description":"Retorna o ângulo de inclinação do robô em relação ao plano da arena. O retorno é um valor do tipo número."},
+                "bc.detectDistance": {
+                    "prefix": "bc.detectDistance",
+                    "body": ["bc.detectDistance(${1:Sensor[numero]}, ${2:Mínimo[numero]}, ${3:Máximo[numero]})",],"description":"Retorna se o sensor ultrassônico indicado (parâmetro 1)  está detectando algo entre as distâncias mínima (parâmetro 2) e máxima (parâmetro 3) indicadas. O retorno será verdadeiro caso um objeto seja percebido pelo sensor, e falso caso contrário."},
+                "bc.onTF": {
+                    "prefix": "bc.onTF",
+                    "body": ["bc.onTF(${1:Força[numero]}, ${2:Força[numero]});",],"description":"Move o robô em diferentes direções dependendo da força aplicada. Deve ser indicada a força a ser aplicada na roda da esquerda e na da direita.(Limites de força: negativo(300) a 300 em curvas fora do eixo, negativo(300) a 300 para movimentações em linha reta e negativo(1000) a 1000 para giro no próprio eixo.)"},
+                "bc.returnColor": {
+                    "prefix": "bc.returnColor",
+                    "body": ["bc.returnColor(${1:Sensor[numero]})",],"description":"Retorna a cor percebida pelo sensor indicado. A cor pode ser “VERMELHO”, “VERDE”, “AZUL”, “AMARELO”, “PRETO” e “BRANCO”. A numeração dos sensores de cor estão disponíveis na aba sensores do tutorial do simulador."},
+                "bc.lightness": {
+                    "prefix": "bc.lightness",
+                    "body": ["bc.lightness(${1:Sensor[numero]})",],"description":"Retorna um valor do tipo número com a quantidade de luz percebida pelo sensor de luz indicado. A numeração dos sensores de luz estão disponíveis na aba sensores do tutorial do simulador. "},
+                "bc.printLCD": {
+                    "prefix": "bc.printLCD",
+                    "body": ["bc.printLCD(${1:Linha do Console[numero]}, ${2:Texto[texto]});",],"description":"Imprime na linha especificada do console virtual o texto indicado. O console possui três linhas: 1, 2 e 3."},
+                "bc.openActuator": {
+                    "prefix": "bc.openActuator",
+                    "body": ["bc.openActuator();",],"description":"Abre a garra do atuador empilhadeira durante o tempo especificado em milissegundos."},
+                "bc.closeActuator": {
+                    "prefix": "bc.closeActuator",
+                    "body": ["bc.closeActuator();",],"description":"Fecha a garra do atuador empilhadeira durante o tempo especificado em milissegundos."},
+                "bc.actuatorUp": {
+                    "prefix": "bc.actuatorUp",
+                    "body": ["bc.actuatorUp(${1:Tempo em Milissegundos[numero]});",],"description":"Levanta o atuador pelo tempo indicado em milissegundos."},
+                "bc.actuatorDown": {
+                    "prefix": "bc.actuatorDown",
+                    "body": ["bc.actuatorDown(${1:Tempo em Milissegundos[numero]});",],"description":"Abaixa o atuador por um tempo indicado em milissegundos."},
+                "bc.turnActuatorUp": {
+                    "prefix": "bc.turnActuatorUp",
+                    "body": ["bc.turnActuatorUp(${1:Tempo em Milissegundos[numero]});",],"description":"Gira o atuador para cima por um tempo indicado em milissegundos."},
+                "bc.turnActuatorDown": {
+                    "prefix": "bc.turnActuatorDown",
+                    "body": ["bc.turnActuatorDown(${1:Tempo em Milissegundos[numero]});",],"description":"Gira o atuador para baixo por um tempo especificado em milissegundos."},
+                "bc.clearLCD": {
+                    "prefix": "bc.clearLCD",
+                    "body": ["bc.clearLCD();",],"description":"Apaga todo texto previamente escrito no console."},
+                "bc.millis": {
+                    "prefix": "bc.millis",
+                    "body": ["bc.millis()",],"description":"Retorna o tempo em milissegundos decorrido desde o início da execução da rotina."},
+                "bc.returnGreen": {
+                    "prefix": "bc.returnGreen",
+                    "body": ["bc.returnGreen(${1:Sensor[numero]})",],"description":"Retorna a intensidade da cor verde percebida pelo sensor indicado. A numeração dos sensores de cor estão disponíveis na aba sensores do tutorial do simulador."},
+                "bc.returnBlue": {
+                    "prefix": "bc.returnBlue",
+                    "body": ["bc.returnBlue(${1:Sensor[numero]})",],"description":"Retorna a intensidade da cor azul percebida pelo sensor indicado. A numeração dos sensores de cor estão disponíveis na aba sensores do tutorial do simulador."},
+                "bc.returnRed": {
+                    "prefix": "bc.returnRed",
+                    "body": ["bc.returnRed(${1:Sensor[numero]})",],"description":"Retorna a intensidade da cor vermelha percebida pelo sensor indicado. A numeração dos sensores de cor estão disponíveis na aba sensores do tutorial do simulador."},
+                "bc.onTFRot": {
+                    "prefix": "bc.onTFRot",
+                    "body": ["bc.onTFRot(${1:Força[numero]}, ${2:Ângulo[numero]});",],"description":"Aplica uma força nas rodas do robô para que ele rotacione em torno do eixo uma determinada angulação, positiva ou negativa, a partir de sua direção atual.(Limite de força: 0 a 500)"},
+                "bc.touch": {
+                    "prefix": "bc.touch",
+                    "body": ["bc.touch(${1:Sensor[numero]})",],"description":"Retorna o estado do sensor de toque especificado. O retorno pode ser verdadeiro ou falso. A numeração dos sensores de toque estão disponíveis na aba sensores do tutorial do simulador. "},
+                "bc.angleActuator": {
+                    "prefix": "bc.angleActuator",
+                    "body": ["bc.angleActuator()",],"description":"Retorna o número correspondente ao ângulo de inclinação do atuador robô em relação ao plano."},
+                "bc.actuatorSpeed": {
+                    "prefix": "bc.actuatorSpeed",
+                    "body": ["bc.actuatorSpeed(${1:Força[numero]});",],"description":"Modifica a força aplicada na movimentação dos atuadores. (Limite de força: 0 a 150)"},
+                "bc.turnLedOn": {
+                    "prefix": "bc.turnLedOn",
+                    "body": ["bc.turnLedOn(${1:Vermelho[numero]}, ${2:Verde[numero]}, ${3:Azul[numero]});",],"description":"Acende o led na cor especificada a partir de um código código RGB. O parâmetro 1 corresponde ao R, o parâmetro 2 ao G e o parâmetro 3 ao B. Os valores de RGB recebidos podem variar de 0 a 255."},
+                "bc.turnLedOff": {
+                    "prefix": "bc.turnLedOff",
+                    "body": ["bc.turnLedOff();",],"description":"Apaga o led."},
+                "bc.onTFRotations": {
+                    "prefix": "bc.onTFRotations",
+                    "body": ["bc.onTFRotations(${1:Força[numero]}, ${2:Rotações[numero]});",],"description":"Move o robô para frente com a força indicada pela quantidade de rotações fornecida.(Limite de força: 300)"},
+                "bc.saveLCD": {
+                    "prefix": "bc.saveLCD",
+                    "body": ["bc.saveLCD();",],"description":"Habilita o registro em arquivo do conteúdo escrito no console."},
+                "bc.stopSavingLCD": {
+                    "prefix": "bc.stopSavingLCD",
+                    "body": ["bc.stopSavingLCD();",],"description":"Desabilita o registro em arquivo do conteúdo escrito no console."},
+                "bc.eraseLCDFile": {
+                    "prefix": "bc.eraseLCDFile",
+                    "body": ["bc.eraseLCDFile();",],"description":"Apagar o conteúdo salvo no arquivo de registro. "},
+                "bc.randomLimits": {
+                    "prefix": "bc.randomLimits",
+                    "body": ["bc.randomLimits(${1:Parâmetro A[numero]}, ${2:Parâmetro B[numero]})",],"description":"Retorna um número inteiro aleatório entre os números inteiros fornecidos."},
+                "bc.timer": {
+                    "prefix": "bc.timer",
+                    "body": ["bc.timer()",],"description":"Retorna o tempo em milissegundos decorrido desde o início da execução da rotina ou desde o último comando zerartemporizador()."},
+                "bc.resetTimer": {
+                    "prefix": "bc.resetTimer",
+                    "body": ["bc.resetTimer();",],"description":"Zera o tempo decorrido no temporizador e inicia uma nova contagem."},
+                "bc.clearLCDLine": {
+                    "prefix": "bc.clearLCDLine",
+                    "body": ["bc.clearLCDLine(${1:Linha do Console[numero]});",],"description":"Apaga o texto escrito na linha especificada do console. O console possui três linhas: 1, 2 e 3."},
+                "bc.writeText": {
+                    "prefix": "bc.writeText",
+                    "body": ["bc.writeText(${1:Texto[texto]});",],"description":"Registra o texto informado em um arquivo chamado consoleLog.txt"},
+                "bc.writeNumber": {
+                    "prefix": "bc.writeNumber",
+                    "body": ["bc.writeNumber(${1:Número[numero]});",],"description":"Registra o número informado em um arquivo chamado consoleLog.txt"},
+                "bc.onTFRight": {
+                    "prefix": "bc.onTFRight",
+                    "body": ["bc.onTFRight(${1:Força[numero]});",],"description":"Aplica a força indicada no motor da direita. (Limites de força: negativo(300) a 300)"},
+                "bc.onTFLeft": {
+                    "prefix": "bc.onTFLeft",
+                    "body": ["bc.onTFLeft(${1:Força[numero]});",],"description":"Aplica a força indicada no motor da esquerda. (Limite de força: negativo(300) a 300)"},
+                "bc.colorSens": {
+                    "prefix": "bc.colorSens",
+                    "body": ["bc.colorSens(${1:Sensibilidade[numero]});",],"description":"Ajusta a sensibilidade do sensor de cor. Deve ser fornecido um valor de sensibilidade que varia de 0 a 100. A sensibilidade padrão é 25."},
+                "bc.angleBucket": {
+                    "prefix": "bc.angleBucket",
+                    "body": ["bc.angleBucket()",],"description":"Retorna o número correspondente ao ângulo de giro do atuador robô em relação ao plano."},
+                "bc.setPrecision": {
+                    "prefix": "bc.setPrecision",
+                    "body": ["bc.setPrecision(${1:Precisão[numero]});",],"description":"Ajusta a quantidade de casas decimais manipuladas para o valor especificado."},
+                "bc.playNote": {
+                    "prefix": "bc.playNote",
+                    "body": ["bc.playNote(${1:Alto-Falante[numero]}, ${2:Nota Musical[texto]}, ${3:Tempo em Milissegundos[numero]});",],"description":"Toca uma nota musical pelo tempo indicado no alto-falante especificado. As notas musicais podem ser: do, re, mi, fa, sol, la e si."},
+                "bc.playSound": {
+                    "prefix": "bc.playSound",
+                    "body": ["bc.playSound(${1:Alto-Falante[numero]}, ${2:Frequência[numero]}, ${3:Tempo em Milissegundos[numero]}, ${4:Tipo de Onda[texto]});",],"description":"Toca no alto-falante informado, a frequência especificada por um determinado tempo utilizando a onda informada. Os valores de frequência, em unidade própria do simulador, variam de 0 a 300 e as ondas podem ser QUADRADA, DENTE-DE-SERRA, RUIDO ou MUDO."},
+                "bc.changeWave": {
+                    "prefix": "bc.changeWave",
+                    "body": ["bc.changeWave(${1:Tipo de Onda[texto]});",],"description":"Ajusta o tipo de onda que irá modular o som emitido na função tocar."},
+                "bc.stopSound": {
+                    "prefix": "bc.stopSound",
+                    "body": ["bc.stopSound(${1:Alto-Falante[numero]});",],"description":"Interrompe a execução do som no alto-falante especificado."},
+                "bc.toFrequency": {
+                    "prefix": "bc.toFrequency",
+                    "body": ["bc.toFrequency(${1:Frequência em Hertz[numero]})",],"description":"Converte o valor de frequência em Hertz especificado para a unidade de frequência do simulador."},
+                "bc.toHertz": {
+                    "prefix": "bc.toHertz",
+                    "body": ["bc.toHertz(${1:Frequência na Unidade do Simulador[numero]})",],"description":"Converte o valor de frequência na unidade do simulador especificado para Hertz."},
+                "bc.playSoundHertz": {
+                    "prefix": "bc.playSoundHertz",
+                    "body": ["bc.playSoundHertz(${1:Alto-Falante[numero]}, ${2:Frequência[numero]}, ${3:Tempo em Milissegundos[numero]}, ${4:Tipo de Onda[texto]});",],"description":"Toca no alto-falante informado, a frequência especificada por um determinado tempo utilizando a onda informada. Os valores de frequência informados são em Hertz e as ondas podem ser QUADRADA, DENTE-DE-SERRA, RUIDO ou MUDO."},
+                "bc.getonTFRight": {
+                    "prefix": "bc.getonTFRight",
+                    "body": ["bc.getonTFRight()",],"description":"Retorna a velocidade do motor da direita."},
+                "bc.getonTFLeft": {
+                    "prefix": "bc.getonTFLeft",
+                    "body": ["bc.getonTFLeft()",],"description":"Retorna a velocidade do motor da esquerda."},
+                "bc.writeBoolean": {
+                    "prefix": "bc.writeBoolean",
+                    "body": ["bc.writeBoolean(${1:Parâmetro[booleano]});",],"description":"Registra o booleano informado em um arquivo chamado consoleLog.txt"},
+                "bc.paint": {
+                    "prefix": "bc.paint",
+                    "body": ["bc.paint();",],"description":"Habilita o pincel para pintura. "},
+                "bc.stopPainting": {
+                    "prefix": "bc.stopPainting",
+                    "body": ["bc.stopPainting();",],"description":"Recolhe o pincel interrompendo a pintura."},
+                "bc.changePencilColor": {
+                    "prefix": "bc.changePencilColor",
+                    "body": ["bc.changePencilColor(${1:Vermelho[numero]}, ${2:Verde[numero]}, ${3:Azul[numero]});",],"description":"Altera o pincel por um na cor RGB especificada."},
+                "bc.turnFanOn": {
+                    "prefix": "bc.turnFanOn",
+                    "body": ["bc.turnFanOn();",],"description":"Liga o atuador ventilador disponível no Robô 3."},
+                "bc.turnFanOff": {
+                    "prefix": "bc.turnFanOff",
+                    "body": ["bc.turnFanOff();",],"description":"Desligar o atuador ventilador disponível no Robô 3."},
+                "bc.heat": {
+                    "prefix": "bc.heat",
+                    "body": ["bc.heat()",],"description":"Retorna a temperatura percebida pelo sensor de temperatura do robô."},
+                "bc.hasVictims": {
+                    "prefix": "bc.hasVictims",
+                    "body": ["bc.hasVictims()",],"description":"Retorna verdadeiro se existir uma ou mais vítimas no atuador."},
+                "bc.motorSpeed": {
+                    "prefix": "bc.motorSpeed",
+                    "body": ["bc.motorSpeed()",],"description":"Retorna a velocidade de rotação dos motores. "},
+     "if": {
+          "prefix": "?if",
+          "body": [
+               "if (${1:condition}) {\n\t\n}"
+          ],
+          "description": "Estrutura que executa os comandos apenas se a condição definida for verdadeira."
+     },
+     "ifelse": {
+          "prefix": "?ifelse",
+          "body": [
+               "if (${1:condition}) {\n\t\n} else {\n\t\n}"
+          ],
+          "description": "Estrutura que avalia a condição e executa os comandos do 'se' caso seja verdadeira e  do 'senao' caso seja falsa."
+     },
+     "ifelseif": {
+          "prefix": "?ifelseif",
+          "body": [
+               "if (${1:condition}) \n\t\n} else if (${1:condition}) {\n\t\n} "
+          ],
+          "description": "Estrutura que possibilita verificar outra condição 'se', caso a primeira seja falsa."
+     },
+     "while": {
+          "prefix": "?while",
+          "body": [
+               "while (${1:condition}) {\n\t\n}"
+          ],
+          "description": "Laço de repetição que executa os comandos até que a condição seja falsa."
+     },
+     "do": {
+          "prefix": "?do",
+          "body": [
+               "do {\n\t\n} while (${1:condition})"
+          ],
+          "description": "Laço de repetição que executa os comandos antes de verificar a condição, até que seja falsa."
+     },
+     "for": {
+          "prefix": "?for",
+          "body": [
+               "for (int ${1:i} = 0; ${2:i} < ${3:max}; ${4:i}++) {\n\t\n}"
+          ],
+          "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada."
+     },
+     "variable": {
+          "prefix": "?variable",
+          "body": [
+               "${1:type} ${2:name} = ${3:value}"
+          ],
+          "description": "Declaração de uma variável."
+     }
+}

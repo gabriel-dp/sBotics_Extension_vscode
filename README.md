@@ -1,58 +1,22 @@
-<p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=Gabrieldp-dev.sbotics-csharp-snippets">
-    <img src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/logo.png?raw=true" height="200" alt="Logo snippets sBotics" />
-  </a>
-</p>
-<h1 align="center">sBotics Snippets</h1>
-<p align="center">Snippets with <a href="https://sbotics.weduc.natalnet.br">sBotics</a> language support for VS Code<br><a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README_pt_BR.md"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/> Versão em PT_BR <img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/></a></p>
+<p align="center"><img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/> <a href="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/README_pt_BR.md"> Versão em PT_BR</a> <img height="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"/></p>
 
-<h4 align="center">🚧 Under construction 🚧</h4>
+# **sBotics extension for Visual Studio Code**
 
-<p align="center">
- <a href="#features">Features</a> • 
- <a href="#demonstration">Demonstration</a> • 
- <a href="#installation">Installation</a> • 
- <a href="#contribution">Contribution</a>
-</p>
+Extension for [sBotics Simulator](https://sbotics.weduc.natalnet.br) with support to rEduc and C# in brazilian portuguese and english. The snippets have a automatic update, you always will have the latest version of commands. Additionally, gives support to community themes (links at the end).
 
-## Features
-  - Snippets for rEduc in Brazilian Portuguese
-  - Snippets for rEduc in English
-  - Snippets for C#
-  - Automatic update of snippets
-  - Theme support!
+<img src="https://i.imgur.com/HsIsYKG.gif" height="250" alt="A demonstation with Dracula-based theme" />
 
-## Demonstration
-Below is a gif of the power of snippets, demonstrated in rEduc_ptBR (sBoticsR)
+## **Usage**
 
-![Demo](https://i.imgur.com/HsIsYKG.gif)
+- Open or create a .sboticsR/.sboticsC file
 
-## Installation
-### Via VS Code Marketplace
-The installation by VS Code is done by the marketplace, and can be performed directly within it by the following steps:
-  - Open the VS Code
-  - Open the `Extensions` tab
-  - Search for the extension name
-  - Click on `Install`
+- Select the Display Language for your rEduc/C# language
 
-### Via GitHub
-The installation by GitHub is done by the [releases](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases), following the steps below:
-  - Open the [repository on GitHub](https://github.com/gabrieldp23/sBotics_Snippets_vscode)
-  - Access the [releases](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases)
-  - Download the `vsix` file in the [latest release](https://github.com/gabrieldp23/sBotics_Snippets_vscode/releases/latest)
-  - Install on VS Code with this file
-
-  > Press `F1` and type something like `vsix`, this option will appear and just select the location of the file
-
-  ![installation](https://i.imgur.com/K9Y7Dsw.gif)
-
-  When this notification appears you will know that everything went well, then just click on `Reload`!
-
-  ![completed_installation](https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instalacao-vsix.png?raw=true)
+<img src="https://i.imgur.com/BksVn0y.gif" height="300" alt="A demonstation with Dracula-based theme" />
 
 
-## Contribution
-These are the current contributors to the project, who helped create it from scratch!
+## **Contribuitors**
+These are the main contributors to the project, who helped create it from scratch!
 
 <div align=center>
 
@@ -65,17 +29,17 @@ These are the current contributors to the project, who helped create it from scr
       <tr align=center>
           <td>
               <a href="https://github.com/gabrieldp23">
-                  <img width="100%" src="https://avatars.githubusercontent.com/u/66735014?v=4">
+                  <img width=350 src="https://avatars.githubusercontent.com/u/66735014?v=4">
               </a>
           </td>
           <td>
               <a href="https://github.com/jvneto">
-                  <img width="90%" src="https://avatars.githubusercontent.com/u/60150667?v=4">
+                  <img width="350" src="https://avatars.githubusercontent.com/u/60150667?v=4">
               </a>
           </td>
           <td>
               <a href="https://github.com/Eduardo-Barreto">
-                  <img width="100%" src="https://avatars.githubusercontent.com/u/34964398?v=4">
+                  <img width=350 src="https://avatars.githubusercontent.com/u/34964398?v=4">
               </a>
           </td>
       </tr>
@@ -83,14 +47,15 @@ These are the current contributors to the project, who helped create it from scr
 
 </div>
 
-### How to contribute
-All types of contributions are very welcome and appreciated!
-  - Leave a star in the repository
-  - Find and report bugss
-  - Submit PRs to help solve problems or add new features
-  - Share!
+## **Community Themes**
 
-## **sBotics simulator**
-<a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instagram.png?raw=true"/></a>
-<a href="https://discord.gg/PubzWWjzuz"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/discord.png?raw=true"/></a>
+[Dracula-based](https://marketplace.visualstudio.com/items?itemName=gabrieldp-dev.reduc-csharp-dracula) - gab23
+
+
+
+## **sBotics Simulator**
+<div vertical-align: middle>
+<a href="https://discord.gg/PubzWWjzuz"><img height="64" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/discord.png?raw=true"/></a>
 <a href="https://sbotics.weduc.natalnet.br/"><img height="64px" src="https://avatars.githubusercontent.com/u/76214367?s=200&v=4"/></a>
+<a href="https://www.instagram.com/simulador.sbotics/"><img height="64px" src="https://github.com/gabrieldp23/sBotics_Snippets_vscode/blob/main/assets/readme/instagram.png?raw=true"/></a>
+</div>

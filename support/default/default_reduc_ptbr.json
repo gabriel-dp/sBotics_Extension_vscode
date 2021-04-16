@@ -1,87 +1,58 @@
 {
-<<<<<<< HEAD
      "se": {
           "prefix": "?se",
           "body": [
-               "se (${1:condicao}) entao {\n\n}"
+               "se (${1:condicao}) entao {\n\t\n}"
           ],
           "description": "Estrutura que executa os comandos apenas se a condição definida for verdadeira. (if)"
      },
      "sesenao": {
           "prefix": "?sesenao",
           "body": [
-               "se (${1:condicao}) entao {\n\n} senao {\n\n}"
+               "se (${1:condicao}) entao {\n\t\n} senao {\n\t\n}"
           ],
           "description": "Estrutura que avalia a condição e executa os comandos do 'se' caso seja verdadeira e  do 'senao' caso seja falsa. (if | else)"
      },
      "sesenaose": {
           "prefix": "?sesenaose",
           "body": [
-               "se (${1:condicao}) entao {\n\n} senao se (${1:condicao}) entao {\n\n} "
+               "se (${1:condicao}) entao {\n\t\n} senao se (${1:condicao}) entao {\n\t\n} "
           ],
           "description": "Estrutura que possibilita verificar outra condição 'se', caso a primeira seja falsa. (if | else if)"
      },
      "enquanto": {
           "prefix": "?enquanto",
           "body": [
-               "enquanto (${1:condicao}) farei {\n\n}"
+               "enquanto (${1:condicao}) farei {\n\t\n}"
           ],
           "description": "Laço de repetição que executa os comandos até que a condição seja falsa (while)"
      },
      "farei": {
           "prefix": "?farei",
           "body": [
-               "farei {\n\n} enquanto (${1:condicao})"
+               "farei {\n\t\n} enquanto (${1:condicao})"
           ],
           "description": "Laço de repetição que executa os comandos antes de verificar a condição, até que seja falsa. (do while)"
      },
      "para": {
           "prefix": "?para",
           "body": [
-               "para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\n}"
+               "para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\t\n}"
           ],
           "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada. (for)"
      },
      "inicio": {
           "prefix": "?inicio",
           "body": [
-               "inicio\n\n\n\nfim"
+               "inicio\n\t\t\n\t\t\n\t\t\nfim"
           ],
           "description": "Estrutura básica para um código em rEduc."
+     },
+     "variavel": {
+          "prefix": "?variavel",
+          "body": [
+               "${1:tipo} ${2:nome} = ${3:valor}"
+          ],
+          "description": "Declaração de uma variável. Tipos possíveis: numero, texto, booleano"
      }
 }
-=======
-  "se": {
-    "prefix": "?se",
-    "body": ["se (${1:condicao}) entao {\n\n}"],
-    "description": "Estrutura que executa os comandos apenas se a condição definida for verdadeira. (if)"
-  },
-  "sesenao": {
-    "prefix": "?sesenao",
-    "body": ["se (${1:condicao}) entao {\n\n} senao {\n\n}"],
-    "description": "Estrutura que avalia a condição e executa os comandos do 'se' caso seja verdadeira e  do 'senao' caso seja falsa. (if | else)"
-  },
-  "sesenaose": {
-    "prefix": "?sesenaose",
-    "body": [
-      "se (${1:condicao}) entao {\n\n} senao se (${1:condicao}) entao {\n\n} "
-    ],
-    "description": "Estrutura que possibilita verificar outra condição 'se', caso a primeira seja falsa. (if | else if)"
-  },
-  "enquanto": {
-    "prefix": "?enquanto",
-    "body": ["enquanto (${1:condicao}) farei {\n\n}"],
-    "description": "Laço de repetição que executa os comandos até que a condição seja falsa (while)"
-  },
-  "farei": {
-    "prefix": "?farei",
-    "body": ["farei {\n\n} enquanto (${1:condicao})"],
-    "description": "Laço de repetição que executa os comandos antes de verificar a condição, até que seja falsa. (do while)"
-  },
-  "para": {
-    "prefix": "?para",
-    "body": ["para ${1:x} de ${2:min} ate ${3:max} passo ${4:1} farei {\n\n}"],
-    "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada. (for)"
-  }
-}
->>>>>>> 906703d55bcb3b61cb99c278b24011cbaf957785

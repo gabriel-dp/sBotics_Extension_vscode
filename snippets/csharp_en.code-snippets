@@ -1,0 +1,225 @@
+{
+                "bc.wait": {
+                    "prefix": "bc.wait",
+                    "body": ["bc.wait(${1:Time[int]});",],"description":"Waits for a time in miliseconds before proceeding. The values have to be integers greater than 0. "},
+                "bc.distance": {
+                    "prefix": "bc.distance",
+                    "body": ["bc.distance(${1:Sensor[int]})",],"description":"Returns a number with the distance perceived by the referenced (1st parameter) ultrasonic sensor. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
+                "bc.compass": {
+                    "prefix": "bc.compass",
+                    "body": ["bc.compass()",],"description":"Returns the angle of the robot in relation to the north (geographically). "},
+                "bc.detectDistance": {
+                    "prefix": "bc.detectDistance",
+                    "body": ["bc.detectDistance(${1:Sensor[int]}, ${2:Minimum[int]}, ${3:Maximum[int]})",],"description":"Returns if the referenced ultrasonic sensor (1st parameter) is detecting something between the minimum (2nd parameter) and maximum (3rd parameter) distances. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "},
+                "bc.onTF": {
+                    "prefix": "bc.onTF",
+                    "body": ["bc.onTF(${1:Strength[int]}, ${2:Strength[int]});",],"description":"Moves the robot in different directions depending on the applied forces (1st parameter for the left-hand-side motors and 2nd parameter for the right-hand-side ones). The forces can vary from -300 to 300 if both forces are equal or -1000 to 1000 if they're not. "},
+                "bc.returnColor": {
+                    "prefix": "bc.returnColor",
+                    "body": ["bc.returnColor(${1:Sensor[int]})",],"description":"Returns the color percieved by the referenced (1st parameter) sensor. Colors can either be: “RED”, “GREEN”, “BLUE”, “YELLOW”, “CYAN”, “MAGENTA”, “BLACK” and “WHITE”. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
+                "bc.lightness": {
+                    "prefix": "bc.lightness",
+                    "body": ["bc.lightness(${1:Sensor[int]})",],"description":"Returns the light value percieved by the referenced (1st parameter) sensor. Light values vary from a scale of 0 to 100. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "},
+                "bc.printLCD": {
+                    "prefix": "bc.printLCD",
+                    "body": ["bc.printLCD(${1:Console Line[int]}, ${2:Text[int]});",],"description":"Writes on the specified line on the console (1st parameter) the string on the 2nd parameter. The console has 3 lines. "},
+                "bc.openActuator": {
+                    "prefix": "bc.openActuator",
+                    "body": ["bc.openActuator();",],"description":"Opens the claw/scoop of the Forklift actuator for the time specified (1st parameter). "},
+                "bc.closeActuator": {
+                    "prefix": "bc.closeActuator",
+                    "body": ["bc.closeActuator();",],"description":"Closes the claw/scoop of the Forklift actuator for the time specified (1st parameter). "},
+                "bc.actuatorUp": {
+                    "prefix": "bc.actuatorUp",
+                    "body": ["bc.actuatorUp(${1:Time in milliseconds[int]});",],"description":"Raises the claw/scoop of the actuator for the time specified (1st parameter). "},
+                "bc.actuatorDown": {
+                    "prefix": "bc.actuatorDown",
+                    "body": ["bc.actuatorDown(${1:Time in milliseconds[int]});",],"description":"Lowers the claw/scoop of the actuator for the time specified (1st parameter). "},
+                "bc.turnActuatorUp": {
+                    "prefix": "bc.turnActuatorUp",
+                    "body": ["bc.turnActuatorUp(${1:Time in milliseconds[int]});",],"description":"Turns the claw/scoop of the actuator up for the time specified (1st parameter). "},
+                "bc.turnActuatorDown": {
+                    "prefix": "bc.turnActuatorDown",
+                    "body": ["bc.turnActuatorDown(${1:Time in milliseconds[int]});",],"description":"Turns the claw/scoop of the actuator down for the time specified (1st parameter). "},
+                "bc.clearLCD": {
+                    "prefix": "bc.clearLCD",
+                    "body": ["bc.clearLCD();",],"description":"Clears all text being shown on the console. "},
+                "bc.returnGreen": {
+                    "prefix": "bc.returnGreen",
+                    "body": ["bc.returnGreen(${1:Sensor[int]})",],"description":"Returns the intensity of the green color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
+                "bc.returnBlue": {
+                    "prefix": "bc.returnBlue",
+                    "body": ["bc.returnBlue(${1:Sensor[int]})",],"description":"Returns the intensity of the blue color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
+                "bc.returnRed": {
+                    "prefix": "bc.returnRed",
+                    "body": ["bc.returnRed(${1:Sensor[int]})",],"description":"Returns the intensity of the red color perceived by the indicated sensor. The numbering of the color sensors is available in the sensor tab of the simulator tutorial. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0). "},
+                "bc.onTFRot": {
+                    "prefix": "bc.onTFRot",
+                    "body": ["bc.onTFRot(${1:Strength[int]}, ${2:Angle[int]});",],"description":"Apply a force to the robot's wheels so that it rotates a certain angle, positive or negative, from its current direction around the axis. (Force limit: 0 to 500) "},
+                "bc.touch": {
+                    "prefix": "bc.touch",
+                    "body": ["bc.touch(${1:Sensor[int]})",],"description":"Returns the state of the specified (1st parameter) touch sensor. The references for each sensor are present in the Robot settings panel of the simulator (however, in C# you have to subtract one as arrays start on 0).  "},
+                "bc.angleActuator": {
+                    "prefix": "bc.angleActuator",
+                    "body": ["bc.angleActuator()",],"description":"Returns the number corresponding to the angle of inclination of the robot actuator in relation to the plane. "},
+                "bc.actuatorSpeed": {
+                    "prefix": "bc.actuatorSpeed",
+                    "body": ["bc.actuatorSpeed(${1:Strength[int]});",],"description":"Modifies the force applied to the Movement of the actuators.  (Force limit: 0 a 150) "},
+                "bc.turnLedOn": {
+                    "prefix": "bc.turnLedOn",
+                    "body": ["bc.turnLedOn(${1:Red[int]}, ${2:Green[int]}, ${3:Blue[int]});",],"description":"Turn on the led in the specified color from an RGB code. Parameter 1 corresponds to R, parameter 2 to G and parameter 3 to B. The received RGB values ​​can range from 0 to 255. "},
+                "bc.turnLedOff": {
+                    "prefix": "bc.turnLedOff",
+                    "body": ["bc.turnLedOff();",],"description":"Turn off the led. "},
+                "bc.onTFRotations": {
+                    "prefix": "bc.onTFRotations",
+                    "body": ["bc.onTFRotations(${1:Strength[int]}, ${2:Rotations[int]});",],"description":"Moves the robot forward with the force indicated by the number of revolutions provided. (Force limit: 300) "},
+                "bc.saveLCD": {
+                    "prefix": "bc.saveLCD",
+                    "body": ["bc.saveLCD();",],"description":"Turns the write-console-to-text-file feature on. "},
+                "bc.stopSavingLCD": {
+                    "prefix": "bc.stopSavingLCD",
+                    "body": ["bc.stopSavingLCD();",],"description":"Turns the write-console-to-text-file feature off. "},
+                "bc.eraseLCDFile": {
+                    "prefix": "bc.eraseLCDFile",
+                    "body": ["bc.eraseLCDFile();",],"description":"Clears all content inside the consoleLog.txt file found on the installation folder  "},
+                "bc.randomLimits": {
+                    "prefix": "bc.randomLimits",
+                    "body": ["bc.randomLimits(${1:Parameter A[int]}, ${2:Parameter B[int]})",],"description":"Returns a random number between the given integers. "},
+                "bc.timer": {
+                    "prefix": "bc.timer",
+                    "body": ["bc.timer()",],"description":"Returns the time in milliseconds that has elapsed since the execution of the routine or since the last command resetStopwatch(). "},
+                "bc.resetTimer": {
+                    "prefix": "bc.resetTimer",
+                    "body": ["bc.resetTimer();",],"description":"Reset the elapsed time on the timer and start a new countdown. "},
+                "bc.clearLCDLine": {
+                    "prefix": "bc.clearLCDLine",
+                    "body": ["bc.clearLCDLine(${1:Console Line[int]});",],"description":"Clears all text in one of the three lines of the console. "},
+                "bc.writeText": {
+                    "prefix": "bc.writeText",
+                    "body": ["bc.writeText(${1:Text[int]});",],"description":"Registers a string to a text file called consoleLog.txt found on the installation folder. "},
+                "bc.writeNumber": {
+                    "prefix": "bc.writeNumber",
+                    "body": ["bc.writeNumber(${1:Number[int]});",],"description":"Registers a number to a text file called consoleLog.txt found on the installation folder. "},
+                "bc.onTFRight": {
+                    "prefix": "bc.onTFRight",
+                    "body": ["bc.onTFRight(${1:Strength[int]});",],"description":"Applies the given force to the right motor.  (The force is limited from -300 to 300) "},
+                "bc.onTFLeft": {
+                    "prefix": "bc.onTFLeft",
+                    "body": ["bc.onTFLeft(${1:Strength[int]});",],"description":"Applies the given force to the left motor.  (The force is limited from -300 to 300) "},
+                "bc.colorSens": {
+                    "prefix": "bc.colorSens",
+                    "body": ["bc.colorSens();",],"description":"Adjusts the default sensibility for the color function/sensor. The sensibility value has to be a number from 0 to 100. The default sensibility is 25. "},
+                "bc.angleBucket": {
+                    "prefix": "bc.angleBucket",
+                    "body": ["bc.angleBucket()",],"description":"Returns the angle of the actuator scoop in relation to the arena. "},
+                "bc.setPrecision": {
+                    "prefix": "bc.setPrecision",
+                    "body": ["bc.setPrecision(${1:Precision[int]});",],"description":"Adjusts the quantity of decimal places to be processed by the simulator to the specified value. "},
+                "bc.playNote": {
+                    "prefix": "bc.playNote",
+                    "body": ["bc.playNote(${1:Speaker[int]}, ${2:Musical Note[int]}, ${3:Time in milliseconds[int]});",],"description":"Plays a musical note (2nd parameter) on the specified (1st parameter) buzzer speaker for a specified time period in miliseconds (3rd parameter). Valid musical notes: do, re, mi, fa, sol, la, ti, A, B, C, D, E, F, G. "},
+                "bc.playSound": {
+                    "prefix": "bc.playSound",
+                    "body": ["bc.playSound(${1:Speaker[int]}, ${2:Frequency[int]}, ${3:Time in milliseconds[int]}, ${4:Wave Type[int]});",],"description":"Plays on the specified (1st parameter) buzzer speaker a specific sBotics frequency (2nd parameter) for a specified time period in miliseconds (3rd parameter) with a specific wave format (4th parameter). Wave formats are: SQUARE, SAWTOOTH, NOISE, MUTE. "},
+                "bc.changeWave": {
+                    "prefix": "bc.changeWave",
+                    "body": ["bc.changeWave(${1:Wave Type[int]});",],"description":"Adjusts the wave format that the play function will have."},
+                "bc.stopSound": {
+                    "prefix": "bc.stopSound",
+                    "body": ["bc.stopSound(${1:Speaker[int]});",],"description":"Stops the execution of the specified (1st parameter) buzzer speaker. "},
+                "bc.toFrequency": {
+                    "prefix": "bc.toFrequency",
+                    "body": ["bc.toFrequency(${1:Frequency in Hertz[int]})",],"description":"Converts a given Hertz frequency to the unit of frequency of the simulator. "},
+                "bc.toHertz": {
+                    "prefix": "bc.toHertz",
+                    "body": ["bc.toHertz(${1:Frequency in the Simulator Unit[int]})",],"description":"Converts a given sBotics frequency to Hertz. "},
+                "bc.playSoundHertz": {
+                    "prefix": "bc.playSoundHertz",
+                    "body": ["bc.playSoundHertz(${1:Speaker[int]}, ${2:Frequency[int]}, ${3:Time in milliseconds[int]}, ${4:Wave Type[int]});",],"description":"Plays on the specified (1st parameter) buzzer speaker a specific HERTZ frequency (2nd parameter) for a specified time period in miliseconds (3rd parameter) with a specific wave format (4th parameter). Wave formats are: SQUARE, SAWTOOTH, NOISE, MUTE. "},
+                "bc.getonTFRight": {
+                    "prefix": "bc.getonTFRight",
+                    "body": ["bc.getonTFRight()",],"description":"Returns the right motor speed. "},
+                "bc.getonTFLeft": {
+                    "prefix": "bc.getonTFLeft",
+                    "body": ["bc.getonTFLeft()",],"description":"Returns the left motor speed. "},
+                "bc.writeBoolean": {
+                    "prefix": "bc.writeBoolean",
+                    "body": ["bc.writeBoolean(${1:Parameter[boolean]});",],"description":"Registers a boolean to a text file called consoleLog.txt found on the installation folder. "},
+                "bc.paint": {
+                    "prefix": "bc.paint",
+                    "body": ["bc.paint();",],"description":"Enables the pencil for painting.  "},
+                "bc.stopPainting": {
+                    "prefix": "bc.stopPainting",
+                    "body": ["bc.stopPainting();",],"description":"Retracts the pencil interrupting the painting. "},
+                "bc.changePencilColor": {
+                    "prefix": "bc.changePencilColor",
+                    "body": ["bc.changePencilColor(${1:Red[int]}, ${2:Green[int]}, ${3:Blue[int]});",],"description":"Changes the color of the pencil to a specific RGB color. "},
+                "bc.turnFanOn": {
+                    "prefix": "bc.turnFanOn",
+                    "body": ["bc.turnFanOn();",],"description":"Turns the fan actuator on. "},
+                "bc.turnFanOff": {
+                    "prefix": "bc.turnFanOff",
+                    "body": ["bc.turnFanOff();",],"description":"Turns the fan actuator off. "},
+                "bc.heat": {
+                    "prefix": "bc.heat",
+                    "body": ["bc.heat()",],"description":"Returns the temperature perceived by the temperature sensor of the robot. "},
+                "bc.hasVictims": {
+                    "prefix": "bc.hasVictims",
+                    "body": ["bc.hasVictims()",],"description":"Returns true if there is one or more victims inside the actuator. "},
+                "bc.motorSpeed": {
+                    "prefix": "bc.motorSpeed",
+                    "body": ["bc.motorSpeed()",],"description":"Returns the speed of rotation of the motors.  "},
+                "bc.inclination": {
+                    "prefix": "bc.inclination",
+                    "body": ["bc.inclination()",],"description":"Returns the angle of inclnation of the robot in relation to the arena. "},
+     "if": {
+          "prefix": "?if",
+          "body": [
+               "if (${1:condition}) {\n\t\n}"
+          ],
+          "description": "Structure that executes commands only if the defined condition is true."
+     },
+     "ifelse": {
+          "prefix": "?ifelse",
+          "body": [
+               "if (${1:condition}) {\n\t\n} else {\n\t\n}"
+          ],
+          "description": "Structure that evaluates the condition and executes the 'if' commands if it is true and the 'else' if it is false."
+     },
+     "ifelseif": {
+          "prefix": "?ifelseif",
+          "body": [
+               "if (${1:condition}) \n\t\n} else if (${1:condition}) {\n\t\n} "
+          ],
+          "description": "Structure that makes possible to verify another 'if' condition, if the first one is false."
+     },
+     "while": {
+          "prefix": "?while",
+          "body": [
+               "while (${1:condition}) {\n\t\n}"
+          ],
+          "description": "Loop that executes the commands until the condition be false."
+     },
+     "do": {
+          "prefix": "?do",
+          "body": [
+               "do {\n\t\n} while (${1:condition})"
+          ],
+          "description": "Loop that executes the commands before checking the condition, until be false."
+     },
+     "for": {
+          "prefix": "?for",
+          "body": [
+               "for (int ${1:i} = 0; ${2:i} < ${3:max}; ${4:i}++) {\n\t\n}"
+          ],
+          "description": "Loop that executes commands for a predetermined number of times."
+     },
+     "variable": {
+          "prefix": "?variable",
+          "body": [
+               "${1:type} ${2:name} = ${3:value}"
+          ],
+          "description": "Declaration of a variable."
+     }
+}
