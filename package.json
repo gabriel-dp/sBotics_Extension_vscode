@@ -2,7 +2,7 @@
 	"name": "sbotics-extension",
 	"displayName": "sBotics",
 	"description": "Support and Snippets to rEduc and C#.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "sbotics-simulator",
 	"repository": {
 		"type": "git",
@@ -31,10 +31,9 @@
 		"csharp",
 		"reduc",
 		"rEduc",
+		"re",
 		"sbotics",
-		"sBotics",
-		"sboticsC",
-		"sboticsR"
+		"sBotics"
 	],
 	"activationEvents": [
 		"*"
@@ -70,6 +69,7 @@
 					"reducEN"
 				],
 				"extensions": [
+					".re",
 					".sboticsR"
 				],
 				"configuration": "./support/language-configuration.json"
@@ -80,6 +80,7 @@
 					"reducPTBR"
 				],
 				"extensions": [
+					".re",
 					".sboticsR"
 				],
 				"configuration": "./support/language-configuration.json"
@@ -90,7 +91,8 @@
 					"csharpEN"
 				],
 				"extensions": [
-					".sboticsC"
+					".cs",
+					"sboticsC"
 				],
 				"configuration": "./support/language-configuration.json"
 			},
@@ -100,7 +102,8 @@
 					"csharpPTBR"
 				],
 				"extensions": [
-					".sboticsC"
+					".cs",
+					"sboticsC"
 				],
 				"configuration": "./support/language-configuration.json"
 			}

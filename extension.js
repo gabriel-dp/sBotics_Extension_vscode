@@ -168,7 +168,10 @@ const jsonToSnippet = (nameLang, json, totalLangs) => {
         const type = e["type"].toString();
         const parameters = e["parameters"];
 
-        jsonGrammars(code, type);
+        //remove 'bc.' of csharp codes
+        var codeMod = code
+        if (nameLang.charAt(0) == 'c') codeMod = codeMod.substring(3, codeMod.length);
+        jsonGrammars(codeMod, type);
 
         var d = description.replace(/(\r\n|\n|\r|")/gm, "");
 
@@ -199,7 +202,7 @@ const jsonToSnippet = (nameLang, json, totalLangs) => {
             Code += "}, ";
         }
         Code = Code.replace(/,\s*$/, "");
-        if (return_type == "Void" && nameLang.charAt(0) == "c") {
+        if (return_type == "Void" && nameLang.charAt(0) == 'c') {
             Code += `);`;
         } else {
             Code += `)`;
@@ -226,6 +229,7 @@ const jsonToSnippet = (nameLang, json, totalLangs) => {
         generateGrammar = false;
     }
 };
+
 
 /**
  * @param {vscode.ExtensionContext} context

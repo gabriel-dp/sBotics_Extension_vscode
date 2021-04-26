@@ -41,11 +41,11 @@
           ],
           "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada."
      },
-     "variable": {
-          "prefix": "?variable",
+     "Main": {
+          "prefix": "?main",
           "body": [
-               "${1:type} ${2:name} = ${3:value}"
+               "void Main () {\n\t\n}"
           ],
-          "description": "Declaração de uma variável."
+          "description": "Estrutura básica para um código em C#."
      }
 }

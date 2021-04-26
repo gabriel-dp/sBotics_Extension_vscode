@@ -41,11 +41,11 @@
           ],
           "description": "Loop that executes commands for a predetermined number of times."
      },
-     "variable": {
-          "prefix": "?variable",
+     "Main": {
+          "prefix": "?main",
           "body": [
-               "${1:type} ${2:name} = ${3:value}"
+               "void Main () {\n\t\n}"
           ],
-          "description": "Declaration of a variable."
+          "description": "Basic structure of a C# code."
      }
 }
