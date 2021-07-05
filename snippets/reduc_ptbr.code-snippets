@@ -395,10 +395,24 @@
           ],
           "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada. (for)"
      },
+     "repita": {
+          "prefix": "?repita",
+          "body": [
+               "repita ${1:x} vezes {\n\t\n}"
+          ],
+          "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada. (for)"
+     },
+     "teste": {
+          "prefix": "?teste",
+          "body": [
+               "teste (${1:valor})\n\tcaso ${2:caso1}:\n\t\t${3:ação1}\n\toutros:\n\t\t${4:padrão}"
+          ],
+          "description": "Estrutura condicional que compara se o valor de entrada corresponde a algum dos casos definidos. (switch/case)"
+     },
      "inicio": {
           "prefix": "?inicio",
           "body": [
-               "inicio\n\t\t\n\t\t\n\t\t\nfim"
+               "inicio\n\t\n\t\n\t\nfim"
           ],
           "description": "Estrutura básica para um código em rEduc."
      },

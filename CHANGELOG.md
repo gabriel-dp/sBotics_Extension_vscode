@@ -1,6 +1,12 @@
+## 1.0.4
++ Fixed bugs
+
+## 1.0.3
++ Modifications to themes in C#
+
 ## 1.0.2
 
-+ Removed support to .sboticsR and .sboticsC
++ Added new snippets to C#
 + Added support to .re
 
 ## 1.0.1

@@ -255,13 +255,13 @@ function activate(context) {
                 const response = value.response;
 
                 if (states == "ERROR") {
-                    vscode.window.showErrorMessage(message);
+                    console.log(message);
                 } else {
                     jsonToSnippet(langPrograming, response, number);
                 }
             },
             (value) => {
-                vscode.window.showErrorMessage("An unexpected error occurred in the sBotics extension");
+                console.log("An unexpected error occurred in the sBotics extension");
             }
         );
     });

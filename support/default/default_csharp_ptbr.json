@@ -41,6 +41,13 @@
           ],
           "description": "Laço de repetição que executa os comandos por uma quantidade de vezes predeterminada."
      },
+     "switch": {
+          "prefix": "?switch",
+          "body": [
+               "switch (${1:value}) {\n\tcase ${2:case1}:\n\t\t${3:action1}\n\t\tbreak;\n\tdefault:\n\t\t${4:default}\n}"
+          ],
+          "description": "Estrutura condicional que compara se o valor de entrada corresponde a algum dos casos definidos."
+     },
      "Main": {
           "prefix": "?main",
           "body": [

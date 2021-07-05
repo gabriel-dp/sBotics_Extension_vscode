@@ -2,7 +2,7 @@
 	"name": "sbotics-extension",
 	"displayName": "sBotics",
 	"description": "Support and Snippets to rEduc and C#.",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"publisher": "sbotics-simulator",
 	"repository": {
 		"type": "git",
@@ -126,11 +126,6 @@
 			},
 			{
 				"language": "csharp-ptbr",
-				"scopeName": "source.sboticsC",
-				"path": "./support/grammars/sboticsC.tmLanguage.json"
-			},
-			{
-				"language": "csharp",
 				"scopeName": "source.sboticsC",
 				"path": "./support/grammars/sboticsC.tmLanguage.json"
 			}

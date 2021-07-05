@@ -395,10 +395,24 @@
           ],
           "description": "Loop that executes commands for a predetermined number of times. (for)"
      },
+     "repeat": {
+          "prefix": "?repeat",
+          "body": [
+               "repeat ${1:x} times {\n\t\n}"
+          ],
+          "description": "Loop that executes commands for a predetermined number of times. (for)"
+     },
+     "switch": {
+          "prefix": "?switch",
+          "body": [
+               "switch (${1:value})\n\tcase ${2:case1}:\n\t\t${3:action1}\n\tothers:\n\t\t${4:default}"
+          ],
+          "description": "Conditional structure that compare the input value to a defined case. (switch/case)"
+     },
      "begin": {
           "prefix": "?begin",
           "body": [
-               "begin\n\t\t\n\t\t\n\t\t\nend"
+               "begin\n\t\n\t\n\t\nend"
           ],
           "description": "Basic structure of a script in rEduc."
      },
